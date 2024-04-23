@@ -1,0 +1,48 @@
+.mainContainer {
+  max-width: 1200px;
+  padding: 2rem 2.3rem;
+  margin: auto;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.titlu {
+  text-align: center;
+  font-size: 2rem;
+}
+
+span {
+  font-size: 4rem;
+}
+
+.imagine {
+  height: 22rem;
+  object-fit: cover;
+  border-bottom: 2px solid black;
+  border-radius: 1rem;
+}
+
+.imagineNight {
+  border-bottom: 2px solid white;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+  .mainContainer {
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem 1.5rem;
+  }
+
+  .titlu {
+    padding: 0 1.5rem;
+  }
+}

@@ -1,0 +1,78 @@
+.display {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 2.3rem;
+}
+
+.contactBackground {
+  border-radius: 3rem;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  padding: 2rem 2.3rem;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contactBackgroundNight {
+  box-shadow: 0 0 10px 5px #fff;
+  box-shadow: 0 0 10px 5px #fff;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagine {
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+ 
+}
+
+.socialMediaImg {
+width: 2rem;
+transition: transform 0.3s ease; 
+}
+
+.socialMediaImg:hover{
+  transform: scale(1.3);
+}
+
+
+
+.mail {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--text-night-mode);
+  border-radius: 0.5rem;
+  background: #3747d6;
+  padding: 0.5rem 0.5rem;
+}
+
+.mobile {
+  font-size: 1.5rem;
+}
+
+
+.contactLinks {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 1045px) {
+  .display {
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+  }
+  .contactBackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

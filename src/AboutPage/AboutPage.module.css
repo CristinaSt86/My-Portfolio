@@ -1,0 +1,86 @@
+.mainContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 2.3rem;
+  display: flex;
+  align-items: stretch;
+  gap: 2.3rem;
+}
+
+.aboutBackground {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 22px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills,
+.hey,
+.paragraf {
+  width: auto;
+  padding: 8px;
+  margin: 6px;
+}
+
+.ulist {
+  list-style-type: none;
+  font-size: 1.2rem;
+  padding: 0 12px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.listItem {
+  padding: 0.7rem;
+  margin: 0.3rem;
+  background: #3747d6;
+  border-radius: 1rem;
+  text-align: center;
+  color: var(--text-night-mode);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.listItem a, .listItem a:visited {
+  text-decoration: none;
+  color: inherit; /* Ensures the link color matches the text color */
+}
+
+.listItem:hover {
+  background: var(--text-night-mode);
+  color: #3747d6;
+  transform: scale(1.1);
+}
+
+.paragraf {
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .aboutBackground {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .paragraf {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .ulist {
+    justify-content: center;
+  }
+
+  .skills {
+    text-align: center;
+  }
+
+  .mainContainer {
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 1.5rem;
+  }
+}

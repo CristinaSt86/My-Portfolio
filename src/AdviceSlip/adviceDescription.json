@@ -1,0 +1,4 @@
+{
+    "adviceDescription": "This app features a clean HTML layout with a heading for advice numbers and a paragraph for displaying advice texts, complemented by two images\u2014one decorative and one a dice icon that serves as a button to fetch new advice. Using JavaScript, it selects necessary DOM elements to dynamically display advice, fetched asynchronously from the https://api.adviceslip.com/advice API. A dice button triggers updates, bringing fresh advice on click, while CSS and Google Fonts ensure a stylish and readable interface. This setup illustrates a responsive, user-interactive web application."
+  }
+  

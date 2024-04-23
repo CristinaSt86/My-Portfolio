@@ -1,0 +1,62 @@
+.mainContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 2.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff33;
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.imagine {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  margin: 1rem;
+}
+
+.aboutApp {
+  max-width: 100%;
+}
+
+.galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .mainContainer {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .aboutApp p,
+  h1 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .aboutApp {
+    padding: 0;
+  }
+
+  .imagine {
+    height: auto;
+    margin: 0;
+  }
+
+  .galleryContainer {
+    gap: 0.5rem;
+  }
+}

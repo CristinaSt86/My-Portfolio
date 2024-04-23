@@ -1,0 +1,52 @@
+.mainContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 2.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff33;
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.mainContainerNight {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.imagine {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.aboutApp {
+  max-width: 100%;
+  padding: 0 1.4em;
+}
+
+@media only screen and (max-width: 767px) {
+  .mainContainer {
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+  }
+
+  .aboutApp p,
+  h1 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .aboutApp {
+    padding: 0;
+  }
+
+  .imagine {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,19 @@
+.Link {
+  cursor: pointer;
+  text-decoration: none;
+  color:#3747d6;
+  border-top: 4px solid#3747d6;
+  border-bottom: 4px solid#3747d6;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  background:  rgba(255, 255, 255, 0.4);
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.Link:hover {
+    background:#3747d6;
+    color:var(--text-night-mode) ;
+    transform: scale(1.1);
+  }
+

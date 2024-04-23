@@ -1,0 +1,4 @@
+{
+    "jokeDescription": "This HTML file, along with accompanying CSS and JavaScript files, creates a simple web application called 'Joke Teller.' The app consists of a container with two buttons: one to request a joke and another to navigate to an 'About' page. When the user clicks the 'Tell me a joke!' button, an asynchronous JavaScript function fetches a joke from the JokeAPI, ensuring it's safe for all audiences by excluding NSFW, racist, sexist, and explicit content. The fetched joke is then rendered in the HTML div with the id 'speech' and read aloud using the VoiceRSS API. Additionally, clicking the 'About app' button redirects the user to an about page."
+  }
+  

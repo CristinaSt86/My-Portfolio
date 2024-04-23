@@ -1,0 +1,13 @@
+.handleBackBtn {
+  width: 4rem;
+  height: auto;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .handleBackBtn{
+    width: 3rem;
+  }
+}
