@@ -9,6 +9,7 @@ export const ThemeProvider = ({ children }) => {
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
+    // console.log("Toggling theme to:", newTheme); 
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme); // Persisting theme choice
   };

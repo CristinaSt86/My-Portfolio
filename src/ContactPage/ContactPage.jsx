@@ -27,9 +27,9 @@ const ContactPage = () => {
           <h1 className={css.contactMe}>Contact me</h1>
           <h2 className={css.mobile}>Mobile : +49 15731871996</h2>
           <h2>
-            <Link to={`mailto:${emailAddress}`} className={css.mail}>
+          <a href={`mailto:${emailAddress}`} className={css.mail}>
               {emailAddress}
-            </Link>
+            </a>
           </h2>
           <div className={css.contactLinks}>
             <Link

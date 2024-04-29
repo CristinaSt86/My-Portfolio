@@ -13,10 +13,48 @@
   text-align: center;
   font-size: 2rem;
 }
-
-span {
-  font-size: 4rem;
+@keyframes shineAnimation {
+  0% {
+    background-position: left center;
+  }
+  100% {
+    background-position: right center;
+  }
 }
+
+@keyframes scaleText {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Increase scale when the shine is at the center */
+  }
+}
+
+.shineEffect {
+  width: auto; /* Ensure that it's auto or 100% if needed */
+  overflow: visible;
+  position: relative;
+  color: transparent; /* Make the text color transparent to see the background */
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.8), 
+    rgba(44, 10, 170, 0.9),
+    rgba(255, 255, 255, 0.8), 
+    transparent
+  );
+  background-size: 300% 100%; /* Increase to a size large enough to cover the whole text */
+  background-position: 100% center; /* Larger background size for a tighter gradient */
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text; /* For WebKit browsers */
+  -webkit-text-fill-color: transparent; /* For WebKit browsers */
+  animation: shineAnimation 3s linear infinite, scaleText 3s linear infinite;
+  display: inline; /* Ensure the span is not block level */
+}
+
 
 .imagine {
   height: 22rem;

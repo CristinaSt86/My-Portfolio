@@ -6,7 +6,7 @@
 }
 
 .contactBackground {
-  border-radius: 3rem;
+  border-radius: 1rem;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
   display: flex;
   padding: 2rem 2.3rem;
@@ -50,6 +50,13 @@ transition: transform 0.3s ease;
   border-radius: 0.5rem;
   background: #3747d6;
   padding: 0.5rem 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.mail:hover{
+  transform: scale(1.3);
+  background: var(--bg-day-mode);
+  color: #3747d6 ;
 }
 
 .mobile {
@@ -62,6 +69,18 @@ transition: transform 0.3s ease;
   gap: 2rem;
   align-items: center;
   margin: 1rem;
+}
+
+@media (min-width: 560px) and (max-width: 1044px) {
+ .contactBackground{
+  width: 50%;
+ }
+
+ .display{
+  justify-content: center;
+  align-items: center;
+ }
+ 
 }
 
 @media only screen and (max-width: 1045px) {

@@ -15,7 +15,7 @@ const HomePage = () => {
       <h2 className={css.titlu}>
         <span>Hello! I'm Cristina,</span>
         <br />
-        based in Germany junior frontend developer passionate about crafting
+        based in Germany <span className={css.shineEffect}> junior frontend developer </span> passionate about crafting
         beautiful and intuitive web experiences.
       </h2>
     </div>

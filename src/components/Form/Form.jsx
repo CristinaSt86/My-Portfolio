@@ -43,17 +43,20 @@ const Form = () => {
         id='name'
         name='name'
         type="text"
+        maxLength="50"
         placeholder='Name'
       />
          <FloatingLabel
         id='email'
         name='email'
         type="email"
+        maxLength="50"
         placeholder='Email'
       />
          <FloatingLabel
         id='message'
         name='message'
+        maxLength="300"
         placeholder='Type your message here...'
         isTextArea={true}
       />

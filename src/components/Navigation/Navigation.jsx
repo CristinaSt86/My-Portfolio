@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import css from "./Navigation.module.css";
 import hamburgerMenu from "../../images/hamburgerMenu.png";
@@ -6,9 +6,10 @@ import { useTheme } from "../../ThemeContext";
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navRef = useRef(null);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setMenuOpen((prev) => !prev);
   };
 
   const closeMenu = () => {
@@ -19,6 +20,18 @@ const Navigation = () => {
     toggleMenu();
     closeMenu();
   };
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (navRef.current && !navRef.current.contains(e.target)) {
+        setMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -33,7 +46,7 @@ const Navigation = () => {
     theme === "dark" ? `${css.links}  ${css.linksNight}` : css.links;
 
   return (
-    <nav>
+    <nav ref={navRef}>
       <div className={css.hamburger} onClick={toggleMenu}>
         <img src={hamburgerMenu} alt="mobile-menu" />
       </div>
