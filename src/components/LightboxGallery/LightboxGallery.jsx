@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
-import Image from "../components/Image/Image";
-import css from "./FigoRest.module.css";
+import Image from "../Image/Image";
+import css from "../../FigoRest/FigoRest.module.css";
 
 export const LightboxGallery = ({ images }) => {
   console.log("Rendering LightboxGallery with images:", images.length);

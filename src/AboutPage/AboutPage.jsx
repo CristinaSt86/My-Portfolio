@@ -3,11 +3,17 @@ import css from "./AboutPage.module.css";
 import aboutMeText from "./aboutMeText.json";
 import { Link } from "react-router-dom";
 import ParagraphNight from "../components/ParagraphNight/ParagraphNight";
-import { LightboxGallery } from "../FigoRest/LightboxGallery";
+import { LightboxGallery } from "../components/LightboxGallery/LightboxGallery";
 import c11 from "../images/c11.jpg";
 import c12 from "../images/c12.jpg";
 import c13 from "../images/c13.jpg";
 import c14 from "../images/c14.jpg";
+import c15 from "../images/c15.png";
+import c16 from "../images/c16.png";
+import c17 from "../images/c17.png";
+
+
+
 
 const AboutPage = () => {
   const skills = [
@@ -31,7 +37,7 @@ const AboutPage = () => {
     { German: "B1" },
   ];
 
-  const certifications = [c11, c12, c13, c14];
+  const certifications = [c11, c12, c13, c14, c15, c16, c17];
 
   return (
     <div className={css.mainContainer}>

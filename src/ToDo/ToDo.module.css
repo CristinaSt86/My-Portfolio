@@ -31,7 +31,7 @@
 @media only screen and (max-width: 767px) {
   .mainContainer {
     flex-direction: column;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem;
   }
 
   .aboutApp p,

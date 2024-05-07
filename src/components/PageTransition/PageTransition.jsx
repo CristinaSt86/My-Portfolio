@@ -5,10 +5,10 @@ const PageTransition = ({ children, duration = 500 }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    console.log('Component mounting, starting timeout...');
+    // console.log('Component mounting, starting timeout...');
     const timer = setTimeout(() => {
       setIsVisible(true);
-      console.log('Setting visible to true');
+      // console.log('Setting visible to true');
     }, 300); // A slight delay to ensure smooth transition
 
     return () => {

@@ -2,7 +2,7 @@ import React from 'react'
 import css from './ToDo.module.css'
 import toDoDescription from './toDoDescription.json'
 import GoToGithub from '../components/GoToGithub/GoToGithub';
-import { LightboxGallery } from '../FigoRest/LightboxGallery'
+import { LightboxGallery } from '../components/LightboxGallery/LightboxGallery'
 import Todo1 from '../images/Todo1.jpg'
 import Todo2 from '../images/Todo2.jpg'
 import Todo3 from '../images/Todo3.jpg'

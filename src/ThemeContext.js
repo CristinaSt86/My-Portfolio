@@ -17,9 +17,9 @@ export const ThemeProvider = ({ children }) => {
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme') || 'light';
     setTheme(storedTheme);
-    console.log("Theme from storage:", storedTheme);
+    // console.log("Theme from storage:", storedTheme);
   }, []);
-  console.log("Current Theme:", theme); // Debug
+  // console.log("Current Theme:", theme);
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}

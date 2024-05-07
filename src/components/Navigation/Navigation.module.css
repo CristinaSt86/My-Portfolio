@@ -9,7 +9,7 @@
   text-decoration: none;
   display: flex;
   padding: 0.7rem;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid black;
   border-radius: 1.5rem;
   color: var(--text-day-mode);
   font-size: 1.2rem;
@@ -19,7 +19,8 @@
 }
 
 .links:hover{
-  transform: scale(1.3);
+  transform: scale(1.1);
+  background: var(--text-night-mode);
 }
 
 .linksNight {
@@ -27,6 +28,11 @@
   border-bottom: 3px solid white;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
+}
+
+.linksNight:hover{
+  color: var(--text-day-mode);
+  border-bottom: 3px solid black;
 }
 
 .hamburger img {
@@ -56,7 +62,7 @@
     background: rgba(255, 255, 255, 0.7);
     border-radius: 0 1rem 1rem 0;
     transform: translateX(-100%); /* Start off-screen */
-    transition: transform 0.9s ease, opacity 0.9s ease; /* Smooth transition for transform and opacity */
+    transition: transform 0.7s ease, opacity 0.7s ease; /* Smooth transition for transform and opacity */
     opacity: 0; /* Start invisible */
     pointer-events: none; /* Prevent interaction when off-screen */
   }
@@ -68,9 +74,10 @@
   }
 
   .links {
-    padding: 1.5rem;
+    padding: 1rem;
     font-size: 1.5rem;
     color: var(--text-day-mode);
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
+    display: inline;
   }
 }

@@ -77,10 +77,12 @@
   .mainContainer {
     flex-direction: column;
     margin: 0;
-    padding: 1rem 1.5rem;
-  }
-
-  .titlu {
-    padding: 0 1.5rem;
+    padding: 1rem 1rem;
   }
 }
+
+/* @media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .mainContainer{
+    flex-direction: column;
+  }
+  } */

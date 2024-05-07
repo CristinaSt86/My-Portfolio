@@ -2,7 +2,7 @@ import React from "react";
 import css from "./FigoRest.module.css";
 import GoToGithub from "../components/GoToGithub/GoToGithub";
 import figoDescription from "./figoDescription.json";
-import { LightboxGallery } from "./LightboxGallery";
+import { LightboxGallery } from "../components/LightboxGallery/LightboxGallery";
 import "react-image-lightbox/style.css";
 import figoPic1 from "../images/figoPic1.jpg";
 import figoPic2 from "../images/figoPic2.jpg";

@@ -12,14 +12,9 @@ const Navigation = () => {
     setMenuOpen((prev) => !prev);
   };
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
-
-  const toggleMenuAndClose = () => {
-    toggleMenu();
-    closeMenu();
-  };
+  // const toggleMenuAndClose = () => {
+  //   toggleMenu();
+  // };
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -56,7 +51,7 @@ const Navigation = () => {
             key={index}
             to={link.path}
             className={linksDarkMode}
-            onClick={toggleMenuAndClose}
+            onClick={toggleMenu}
           >
             {link.name}
           </Link>

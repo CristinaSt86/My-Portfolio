@@ -7,13 +7,15 @@ const FloatingLabel = ({
   type = "text",
   placeholder,
   isTextArea,
+  value,
+  onChange
 }) => {
   const [isFocused, setIsFocused] = useState(false);
-  const [value, setValue] = useState("");
+
 
   const handleFocus = () => setIsFocused(false);
   const handleBlur = () => setIsFocused(false);
-  const handleChange = (e) => setValue(e.target.value);
+ 
 
   const labelClass = isFocused || value ? "placeholder float" : "placeholder";
 
@@ -24,7 +26,7 @@ const FloatingLabel = ({
       placeholder={!value && isFocused ? placeholder : ""}
       onFocus={handleFocus}
       onBlur={handleBlur}
-      onChange={handleChange}
+      onChange={onChange}
       value={value}
       required
     />
@@ -36,7 +38,7 @@ const FloatingLabel = ({
       placeholder={!value && isFocused ? placeholder : ""}
       onFocus={handleFocus}
       onBlur={handleBlur}
-      onChange={handleChange}
+      onChange={onChange}
       value={value}
       required
     />
