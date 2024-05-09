@@ -15,7 +15,7 @@
 .aboutBackground {
   width: 100%;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 22px;
+  border-radius: 1rem;
   display: flex;
   flex-wrap: wrap;
   padding: 0.5rem;
@@ -31,6 +31,7 @@
   border-radius: 1rem;
   padding: 1rem;
   box-sizing: border-box;
+  height: fit-content;
 }
 
 .spokenLan {
