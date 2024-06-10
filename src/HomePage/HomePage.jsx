@@ -13,10 +13,10 @@ const HomePage = () => {
     <div className={css.mainContainer}>
       <Image src={Cris} alt="myPicture" className={imagineDark} />
       <h2 className={css.titlu}>
-        <span>Hello! I'm Cristina,</span>
+        Hello! I'm Cristina,
         <br />
-        based in Germany <span className={css.shineEffect}> junior frontend developer </span> passionate about crafting
-        beautiful and intuitive web experiences.
+        dedicated junior frontend developer based in Germany, focused on
+        creating elegant and user-friendly web solutions.
       </h2>
     </div>
   );
