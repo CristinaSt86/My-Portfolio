@@ -18,8 +18,8 @@ const Header = () => {
     <div className={css.headerContainer}>
     <BackButton />
     <Navigation />
-    <button onClick={() => handleLanguageChange('en')}>EN</button>
-    <button onClick={() => handleLanguageChange('de')}>DE</button>
+    {/* <button onClick={() => handleLanguageChange('en')}>EN</button>
+    <button onClick={() => handleLanguageChange('de')}>DE</button> */}
     <ThemeToggler />
   </div>
   )
