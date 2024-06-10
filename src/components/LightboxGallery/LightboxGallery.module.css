@@ -1,0 +1,23 @@
+/* LightboxGallery.module.css */
+.galleryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Additional styles for responsiveness and other effects */
+@media (max-width: 767px) {
+    .image {
+        width: 80px;
+        height: 80px;
+    }
+}

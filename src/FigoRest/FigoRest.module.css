@@ -14,15 +14,12 @@
   margin-bottom: 3rem;
 }
 
-
-
-.imagine {
+/* .imagine {
   width: 18rem;
   height: 18rem;
   object-fit: cover;
-  border-radius: 1.5rem;
-  margin: 1rem;
-}
+  border-radius: 1rem;
+} */
 
 .aboutApp {
   max-width: 100%;
@@ -31,15 +28,40 @@
 .galleryContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.3rem;
   justify-content: center;
-  align-items: center;
+  gap: 10px;
+}
+
+.imagine {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
   cursor: pointer;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  border-radius: 1rem;
+}
+
+.galleryWrapper {
+  width: 100%;
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  height: 4rem;
+  width: 3rem;
+}
+
+.image-gallery-index {
+  display: none;
 }
 
 @media only screen and (max-width: 767px) {
   .mainContainer {
     flex-direction: column;
+    flex-wrap: nowrap;
     padding: 1rem;
     margin: 1rem 0.5rem;
   }
@@ -54,12 +76,7 @@
     padding: 0;
   }
 
-  .imagine {
-    height: auto;
-    margin: 0;
-  }
-
-  .galleryContainer {
-    gap: 0.5rem;
-  }
+  /* .imgSection {
+    width: 100% !important;
+  } */
 }

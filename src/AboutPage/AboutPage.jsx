@@ -81,7 +81,9 @@ const AboutPage = () => {
         </div>
         <div className={css.certificationsContainer}>
           <h2>My Certifications</h2>
+          <div style={{ width: "100%" }}>
           <LightboxGallery images={certifications} />
+          </div>
         </div>
       </main>
     </div>

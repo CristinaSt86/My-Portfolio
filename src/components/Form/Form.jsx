@@ -55,8 +55,8 @@ const Form = () => {
       <FloatingLabel
         id="message"
         name="message"
-        maxLength="300"
-        placeholder="Type your message here..."
+        maxLength="500"
+        placeholder="Functionality not enabled!"
         isTextArea={true}
         value={formData.message}
         onChange={handleInputChange}

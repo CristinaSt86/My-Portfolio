@@ -67,7 +67,7 @@ const WeatherMini = () => {
         />
 
         {error ? (
-          <p>Error: {error}</p>
+          <p>{error}</p>
         ) : weather && weather.weather && weather.weather.length > 0 ? (
           <div className={css.weatherDetails}>
             <h1>{weather.name}</h1>

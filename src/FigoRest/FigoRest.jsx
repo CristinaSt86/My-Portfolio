@@ -3,7 +3,6 @@ import css from "./FigoRest.module.css";
 import GoToGithub from "../components/GoToGithub/GoToGithub";
 import figoDescription from "./figoDescription.json";
 import { LightboxGallery } from "../components/LightboxGallery/LightboxGallery";
-import "react-image-lightbox/style.css";
 import figoPic1 from "../images/figoPic1.jpg";
 import figoPic2 from "../images/figoPic2.jpg";
 import figoPic3 from "../images/figoPic3.jpg";
@@ -27,7 +26,7 @@ const FigoRest = () => {
     figoPic8,
     figoPic9,
   ];
-  console.log("Rendering FigoRest, images:", images);
+  // console.log("Rendering FigoRest, images:", images);
 
   return (
     <div className={css.mainContainer}>
@@ -38,7 +37,7 @@ const FigoRest = () => {
         </ParagraphNight>
       </section>
       <GoToGithub to="https://github.com/CristinaSt86/Figo-Restaurant" />
-      <section>
+      <section style={{ width: "100%" }}>
         <LightboxGallery images={images} />
       </section>
     </div>
