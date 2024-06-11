@@ -97,7 +97,8 @@
     "githubLink": "https://github.com/CristinaSt86/Figo-Restaurant",
     "imageAlt": "Figo Restaurant Gallery Image"
   },
-    "goToGithub": {
-      "linkText": "To GitHub"
-    }
+  "goToGithub": {
+    "linkText": "To GitHub"
+  },
+  "loadingMessage": "Cristina's portfolio is loading, enjoy it!"
 }

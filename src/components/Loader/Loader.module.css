@@ -1,14 +1,17 @@
-.mesajFlex{
- display: flex;
- justify-content: center;
- align-items: center;
- 
-}
-
-.mesaj{
+.mesajContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  .mesaj {
     padding: 0.7rem;
     margin: 0.5rem;
-    background:  #81c6f0;
+    background: #81c6f0;
     border-radius: 50px;
-    text-align: center;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
