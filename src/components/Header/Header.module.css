@@ -15,6 +15,10 @@
   border-radius: 50%;
   cursor: pointer;
   transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center; 
 }
 .languageTogg:hover {
   transform: scale(1.2);
