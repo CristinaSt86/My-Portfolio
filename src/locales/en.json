@@ -100,5 +100,6 @@
   "goToGithub": {
     "linkText": "To GitHub"
   },
-  "loadingMessage": "Cristina's portfolio is loading, enjoy it!"
+  "loadingMessage": "Cristina's portfolio is loading, enjoy it!",
+  "footerText": "© 2024 Cristina Stoian. All rights reserved."
 }

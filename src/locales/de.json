@@ -99,5 +99,6 @@
   "goToGithub": {
     "linkText": "Zu GitHub"
   },
-  "loadingMessage": "Cristinas Portfolio wird geladen, viel Spaß dabei!"
+  "loadingMessage": "Cristinas Portfolio wird geladen, viel Spaß dabei!",
+  "footerText": "© 2024 Cristina Stoian. Alle Rechte vorbehalten."
 }
