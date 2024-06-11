@@ -1,7 +1,7 @@
 :root {
   --text-night-mode: #fff;
-  --bg-night-mode: #000;
-  --text-day-mode: #000;
+  --bg-night-mode:#445561
+  --text-day-mode: #445561
   --bg-day-mode: #fff;
 }
 

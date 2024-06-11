@@ -5,17 +5,21 @@ import AdvicePic from "../images/AdvicePic.jpg";
 import adviceDescription from "./adviceDescription.json";
 import GoToGithub from "../components/GoToGithub/GoToGithub";
 import ParagraphNight from "../components/ParagraphNight/ParagraphNight";
+import { useTranslation } from "react-i18next";
+
+
 
 const AdviceSlip = () => {
+  const { t } = useTranslation();
   return (
     <div className={css.mainContainer}>
       <section className={css.aboutApp}>
-        <h1> Advice Slip </h1>
+        <h1>{t('advicePage.pageTitle')}</h1>
         <ParagraphNight>
-          <p>{adviceDescription.adviceDescription}</p>
+          <p>{t('advicePage.adviceDescription')}</p>
         </ParagraphNight>
       </section>
-      <GoToGithub to="https://github.com/CristinaSt86/Advice_Slip" />
+      <GoToGithub to={t('advicePage.githubLink')}  />
       <section>
         <Image
           src={AdvicePic}

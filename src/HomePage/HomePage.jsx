@@ -3,20 +3,21 @@ import css from "./HomePage.module.css";
 import Image from "../components/Image/Image";
 import Cris from "../images/Cris.png";
 import { useTheme } from "../ThemeContext";
+import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
   const { theme } = useTheme();
+  const { t } = useTranslation();
   const imagineDark =
     theme === "dark" ? `${css.imagine} ${css.imagineNight} ` : css.imagine;
 
   return (
     <div className={css.mainContainer}>
-      <Image src={Cris} alt="myPicture" className={imagineDark} />
+      <Image src={Cris} alt={t("homePage.imageAlt")} className={imagineDark} />
       <h2 className={css.titlu}>
-        Hello! I'm Cristina,
+        {t("homePage.greeting")}
         <br />
-        dedicated junior frontend developer based in Germany, focused on
-        creating elegant and user-friendly web solutions.
+        {t("homePage.introduction")}
       </h2>
     </div>
   );

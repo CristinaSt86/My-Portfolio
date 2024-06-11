@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import css from "./WeatherMini.module.css";
+import { useTranslation } from "react-i18next";
 
 const WeatherMini = () => {
+  const { t } = useTranslation();
   const [weather, setWeather] = useState({
     main: {},
     weather: [{}],
@@ -57,7 +59,7 @@ const WeatherMini = () => {
 
   return (
     <div >
-      <h3>Check the weather in your town:</h3>
+      <h3>{t('weatherMini.checkWeather')}</h3>
       <div className={css.mainContainer}>
         <input
           type="text"
@@ -71,13 +73,13 @@ const WeatherMini = () => {
         ) : weather && weather.weather && weather.weather.length > 0 ? (
           <div className={css.weatherDetails}>
             <h1>{weather.name}</h1>
-            <p className={css.paragraf}>Temperature: {getIntegerTemperature(weather, "temp")}°C</p>
-            <p  className={css.paragraf}>Feels like: {getIntegerTemperature(weather, "feels_like")}°C</p>
-            <p  className={css.paragraf}>Wind: {weather?.wind?.speed} km/h</p>
-            <p  className={css.paragraf}>Weather: {weather?.weather[0]?.main}</p>
+            <p className={css.paragraf}>{t('weatherMini.temperature')}{getIntegerTemperature(weather, "temp")}°C</p>
+            <p  className={css.paragraf}>{t('weatherMini.feelsLike')}{getIntegerTemperature(weather, "feels_like")}°C</p>
+            <p  className={css.paragraf}>{t('weatherMini.wind')}{weather?.wind?.speed} km/h</p>
+            <p  className={css.paragraf}>{t('weatherMini.weather')}{weather?.weather[0]?.main}</p>
           </div>
         ) : (
-          <p className={css.weatherMessage}>Loading weather...</p>
+          <p className={css.weatherMessage}>{t('weatherMini.loading')}</p>
         )}
       </div>
     </div>

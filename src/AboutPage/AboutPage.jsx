@@ -11,30 +11,51 @@ import c14 from "../images/c14.jpg";
 import c15 from "../images/c15.png";
 import c16 from "../images/c16.png";
 import c17 from "../images/c17.png";
-
-
-
+import { useTranslation } from "react-i18next";
 
 const AboutPage = () => {
+  const { t } = useTranslation();
+
   const skills = [
-    { name: "HTML", url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
-    { name: "CSS", url: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
     {
-      name: "JavaScript",
+      name: t("aboutPage.skills.0.name"),
+      url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    },
+    {
+      name: t("aboutPage.skills.1.name"),
+      url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    },
+    {
+      name: t("aboutPage.skills.2.name"),
       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
-    { name: "React.js", url: "https://reactjs.org/" },
-    { name: "Tailwind", url: "https://tailwindcss.com/" },
-    { name: "Typescript", url: "https://www.typescriptlang.org/" },
-    { name: "Git and GitHub", url: "https://github.com/" },
-    { name: "Next.js", url: "https://nextjs.org/" },
+    { name: t("aboutPage.skills.3.name"), url: "https://reactjs.org/" },
+    { name: t("aboutPage.skills.4.name"), url: "https://tailwindcss.com/" },
+    {
+      name: t("aboutPage.skills.5.name"),
+      url: "https://www.typescriptlang.org/",
+    },
+    { name: t("aboutPage.skills.6.name"), url: "https://github.com/" },
+    { name: t("aboutPage.skills.7.name"), url: "https://nextjs.org/" },
   ];
 
   const languages = [
-    { Romanian: "native" },
-    { English: "C1" },
-    { Greek: "B2" },
-    { German: "B1" },
+    {
+      language: t("aboutPage.languages.0.language"),
+      level: t("aboutPage.languages.0.level"),
+    },
+    {
+      language: t("aboutPage.languages.1.language"),
+      level: t("aboutPage.languages.1.level"),
+    },
+    {
+      language: t("aboutPage.languages.2.language"),
+      level: t("aboutPage.languages.2.level"),
+    },
+    {
+      language: t("aboutPage.languages.3.language"),
+      level: t("aboutPage.languages.3.level"),
+    },
   ];
 
   const certifications = [c11, c12, c13, c14, c15, c16, c17];
@@ -43,7 +64,7 @@ const AboutPage = () => {
     <div className={css.mainContainer}>
       <aside className={css.aside}>
         <div>
-          <h2 className={css.skills}>Languages:</h2>
+          <h2 className={css.skills}>{t("aboutPage.skillsHeader")}</h2>
           <ul className={css.ulist}>
             {skills.map((skill, index) => (
               <li key={index} className={css.listItem}>
@@ -55,12 +76,12 @@ const AboutPage = () => {
           </ul>
         </div>
         <div className={css.foreignList}>
-          <h2>We can also talk in: </h2>
+          <h2>{t("aboutPage.languagesHeader")}</h2>
           <ul className={css.spokenLan}>
             {languages.map((lang, index) => (
               <li key={index}>
-                <span className={css.boldLang}>{Object.keys(lang)[0]}</span>
-                <br /> - {lang[Object.keys(lang)[0]]} - <br />
+                <span className={css.boldLang}>{lang.language}</span>
+                <br /> - {lang.level}<br />
                 <br />
               </li>
             ))}
@@ -70,18 +91,22 @@ const AboutPage = () => {
 
       <main>
         <div className={css.aboutBackground}>
-          <h2 className={css.hey}>Hey there!</h2>
+          <h2 className={css.hey}>{t("aboutPage.hello")}</h2>
           <ParagraphNight>
-            {aboutMeText.texts.map((text, index) => (
-              <p className={css.paragraph} key={index}>
-                {text}
-              </p>
-            ))}
+            {t("aboutPage.introText", { returnObjects: true }).map(
+              (text, index) => (
+                <p className={css.paragraph} key={index}>
+                  {text}
+                </p>
+              )
+            )}
           </ParagraphNight>
         </div>
         <div className={css.certificationsContainer}>
-          <h2>My Certifications</h2>
-          <LightboxGallery images={certifications} />
+          <h2>{t("aboutPage.certificationsHeader")}</h2>
+          <div style={{ width: "100%" }}>
+            <LightboxGallery images={certifications} />
+          </div>
         </div>
       </main>
     </div>

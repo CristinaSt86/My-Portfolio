@@ -56,7 +56,7 @@ const Form = () => {
         id="message"
         name="message"
         maxLength="500"
-        placeholder="Functionality not enabled!"
+        placeholder="Design purpose only - functionality disabled."
         isTextArea={true}
         value={formData.message}
         onChange={handleInputChange}

@@ -1,27 +1,29 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import HttpApi from 'i18next-http-backend';
+import en from './locales/en.json'; 
+import de from './locales/de.json';
 
 i18n
-  .use(HttpApi) // If you're loading translations from a server
-  .use(LanguageDetector)
-  .use(initReactI18next)
+  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(LanguageDetector) // detect user language
   .init({
+    resources: {
+      en: {
+        translation: en // assign the imported en JSON
+      },
+      de: {
+        translation: de // assign the imported de JSON
+      }
+    },
     supportedLngs: ['en', 'de'],
     fallbackLng: "en",
     detection: {
-      order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+      order: ['cookie', 'localStorage', 'htmlTag', 'path', 'subdomain'],
       caches: ['cookie'],
-    },
-    backend: {
-      loadPath: '/locales/{{lng}}/translation.json',
     },
     react: {
       useSuspense: false
-    },
-    interpolation: {
-      escapeValue: false, // Not needed for React as it escapes by default
     },
   });
 

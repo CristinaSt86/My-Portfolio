@@ -2,25 +2,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.4);
   position: relative;
   z-index: 1000;
   margin-bottom: 0.5rem;
 }
 
-.toggleBtn {
-  background: url("../../images/switchDayNight.png");
-  width: 4rem;
-  height: 4rem;
-  object-fit: cover;
-  border-radius: 1.5rem;
-  margin: 0.5rem;
+.languageTogg {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #374957;
+  border-radius: 50%;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.languageTogg:hover {
+  transform: scale(1.2);
+}
+
+.langThemeContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 800px) {
-  .toggleBtn {
-    width: 3rem;
-    height: 4rem;
-  }
+ 
 }

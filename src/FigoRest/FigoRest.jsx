@@ -13,6 +13,7 @@ import figoPic7 from "../images/figoPic7.jpg";
 import figoPic8 from "../images/figoPic8.jpg";
 import figoPic9 from "../images/figoPic9.jpg";
 import ParagraphNight from "../components/ParagraphNight/ParagraphNight";
+import { useTranslation } from "react-i18next";
 
 const FigoRest = () => {
   const images = [
@@ -26,19 +27,20 @@ const FigoRest = () => {
     figoPic8,
     figoPic9,
   ];
-  // console.log("Rendering FigoRest, images:", images);
+
+  const { t } = useTranslation();
 
   return (
     <div className={css.mainContainer}>
       <section className={css.aboutApp}>
-        <h1> Figo Restaurant </h1>
+        <h1>{t("figoRestPage.pageTitle")}</h1>
         <ParagraphNight>
-          <p>{figoDescription.figoDescription}</p>
+          <p>{t("figoRestPage.description")}</p>
         </ParagraphNight>
       </section>
-      <GoToGithub to="https://github.com/CristinaSt86/Figo-Restaurant" />
+      <GoToGithub to={t("figoRestPage.githubLink")} />
       <section style={{ width: "100%" }}>
-        <LightboxGallery images={images} />
+        <LightboxGallery images={images} alt={t("figoRestPage.imageAlt")} />
       </section>
     </div>
   );

@@ -2,26 +2,31 @@ import React from "react";
 import css from "./ProjectsPage.module.css";
 import { useNavigate } from "react-router-dom";
 import WeatherMini from "../components/WeatherMini/WeatherMini"
+import { useTranslation } from "react-i18next";
 
 const ProjectsPage = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+
+  const proiecte = t('projectsPage.projects', { returnObjects: true });
 
   const handleProjectClick = (projectId) => {
     navigate(projectId);
   };
 
   const projects = [
-    { name: "Advice Slip", path: "/advice-slip" },
-    { name: "Mini Robot", path: "/joke-teller" },
-    { name: "To Do App", path: "/to-do" },
-    { name: "Figo Restaurant", path: "/figo-restaurant" },
+    { name: t("projectsPage.projects.[0]"), path: "/advice-slip" },
+    { name: t("projectsPage.miniRobot"), path: "/joke-teller" },
+    { name: t("projectsPage.toDoApp"), path: "/to-do" },
+    { name: t("projectsPage.figoRestaurant"), path: "/figo-restaurant" },
   ];
+
 
   return (
     <div className={css.mainContainer}>
       <div>
         <ul className={css.ulLinks}>
-          {projects.map((project, index) => (
+          {proiecte.map((project, index) => (
             <li key={index}>
               <button
                 className={css.links}

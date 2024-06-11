@@ -44,6 +44,10 @@
   transform: scale(1.1);
 }
 
+.textareaPad{
+  padding: 0 2rem;
+}
+
 @media (min-width: 560px) and (max-width: 1044px) {
   .form {
     width: 50%;

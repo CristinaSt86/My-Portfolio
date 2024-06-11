@@ -1,20 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import css from "./Navigation.module.css";
-import hamburgerMenu from "../../images/hamburgerMenu.png";
+import hamburgerMenu from "../../images/meniuHam.png";
 import { useTheme } from "../../ThemeContext";
+import { useTranslation } from "react-i18next";
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navRef = useRef(null);
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
-
-  // const toggleMenuAndClose = () => {
-  //   toggleMenu();
-  // };
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -29,10 +27,10 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About me", path: "/about" },
-    { name: "Projects", path: "/projects" },
-    { name: "Contact", path: "/contact" },
+    { name: t("header.home"), path: "/" },
+    { name: t("header.about"), path: "/about" },
+    { name: t("header.projects"), path: "/projects" },
+    { name: t("header.contact"), path: "/contact" },
   ];
 
   const { theme } = useTheme();
@@ -57,7 +55,6 @@ const Navigation = () => {
           </Link>
         ))}
       </ul>
-      {/* <hr /> */}
     </nav>
   );
 };

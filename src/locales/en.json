@@ -13,14 +13,23 @@
   "aboutPage": {
     "skillsHeader": "Languages:",
     "skills": [
-      {"name": "HTML", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"},
-      {"name": "CSS", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"},
-      {"name": "JavaScript", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"},
-      {"name": "React.js", "url": "https://reactjs.org/"},
-      {"name": "Tailwind", "url": "https://tailwindcss.com/"},
-      {"name": "Typescript", "url": "https://www.typescriptlang.org/"},
-      {"name": "Git and GitHub", "url": "https://github.com/"},
-      {"name": "Next.js", "url": "https://nextjs.org/"}
+      {
+        "name": "HTML",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+      },
+      {
+        "name": "CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      },
+      {
+        "name": "JavaScript",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      },
+      { "name": "React.js", "url": "https://reactjs.org/" },
+      { "name": "Tailwind", "url": "https://tailwindcss.com/" },
+      { "name": "Typescript", "url": "https://www.typescriptlang.org/" },
+      { "name": "Git and GitHub", "url": "https://github.com/" },
+      { "name": "Next.js", "url": "https://nextjs.org/" }
     ],
     "languagesHeader": "We can also talk in:",
     "languages": [
@@ -48,10 +57,21 @@
   "contactPage": {
     "contactMe": "Contact me",
     "mobile": "Mobile: +49 15731871996",
+    "hireMe": "Hire me",
     "email": "cristina.stoian@yahoo.com",
     "linkedInAlt": "linkedIn link",
     "githubAlt": "gitHub link",
     "instagramAlt": "instagram link"
+  },
+  "weatherMini": {
+    "checkWeather": "Check the weather in your town:",
+    "temperature": "Temperature: ",
+    "feelsLike": "Feels like: ",
+    "wind": "Wind: ",
+    "weather": "Weather: ",
+    "loading": "Loading weather...",
+    "fetchError": "There was a problem fetching the weather data.",
+    "validCityError": "Please enter a valid city name."
   },
   "advicePage": {
     "pageTitle": "Advice Slip",
@@ -67,12 +87,17 @@
   },
   "todoPage": {
     "pageTitle": "To Do App",
-    "toDoDescription": "This React application manages a list of todos with form validation. The main functionality includes displaying todos, allowing users to add, edit, and delete todos, and marking todos as completed. The app utilizes React state hooks such as useState to manage todo data and modal visibility. It consists of components like MyTodos, Modal, and CreateTaskForm, which handle different aspects of the todo management. The MyTodos component renders the list of todos, allowing users to interact with them. The Modal component handles the display of a modal for adding or editing todos. Finally, the CreateTaskForm component provides a form for adding or editing todos, with form validation ensuring that users input data into form fields before submissions or edits can proceed. This validation enhances user experience by prompting them to provide essential information, such as the title of the todo, before proceeding. The App component integrates these components and manages state and event handling for the todo functionality.",
-    "githubLink": "https://github.com/CristinaSt86/TodoApp"
+    "todoDescription": "This React application manages a list of todos with form validation. The main functionality includes displaying todos, allowing users to add, edit, and delete todos, and marking todos as completed. The app utilizes React state hooks such as useState to manage todo data and modal visibility. It consists of components like MyTodos, Modal, and CreateTaskForm, which handle different aspects of the todo management. The MyTodos component renders the list of todos, allowing users to interact with them. The Modal component handles the display of a modal for adding or editing todos. Finally, the CreateTaskForm component provides a form for adding or editing todos, with form validation ensuring that users input data into form fields before submissions or edits can proceed. This validation enhances user experience by prompting them to provide essential information, such as the title of the todo, before proceeding. The App component integrates these components and manages state and event handling for the todo functionality.",
+    "githubLink": "https://github.com/CristinaSt86/TodoApp",
+    "imageAlt": "Screenshot of To Do App"
   },
   "figoRestPage": {
     "pageTitle": "Figo Restaurant",
     "description": "This HTML code represents a modern and visually appealing restaurant website. It incorporates various features and elements to create an engaging user experience. The design is responsive, ensuring compatibility across different devices. Key Features include a responsive navigation menu that allows users to easily navigate to different sections such as About Us, Menu, Service, and Gallery. The hero section features a captivating image with a prominent headline and a call-to-action button, inviting users to explore further. The welcome section welcomes visitors to the restaurant and provides a brief overview of its offerings. It includes an inviting image of a chef and encourages users to learn more about the restaurant's story. Highlighting various reasons to choose the restaurant, the Reasons to Choose section presents key benefits such as a diverse menu, pocket-friendly delivery, and best offers. The Menu Carousel showcases menu items using an interactive carousel, allowing users to browse through different categories such as breakfast, lunch, dinner, desserts, soups, and drinks. Visitors can read testimonials from satisfied customers, adding credibility to the restaurant's reputation. The Latest News section keeps users informed about the latest news and updates related to the restaurant, featuring articles on topics such as Spanish appetizers, wine and cheese, and cups of coffee. The footer section includes important information such as contact details, social media links, menu options, and links to essential pages like About Us, Terms of Use, and Privacy Policy. Used Libraries: jQuery, used for DOM manipulation and event handling; Owl Carousel, utilized to create the interactive carousel for displaying menu items. Overall, this HTML code demonstrates a well-designed and functional restaurant website that effectively promotes the restaurant's brand and offerings to potential customers.",
-    "githubLink": "https://github.com/CristinaSt86/Figo-Restaurant"
-  }
+    "githubLink": "https://github.com/CristinaSt86/Figo-Restaurant",
+    "imageAlt": "Figo Restaurant Gallery Image"
+  },
+    "goToGithub": {
+      "linkText": "To GitHub"
+    }
 }

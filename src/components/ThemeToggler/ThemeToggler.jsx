@@ -1,7 +1,7 @@
 import React from "react";
 import { useTheme } from "../../ThemeContext"; 
 import Image from "../Image/Image";
-import switchDayNight from "../../images/switchDayNight.png";
+import switchDayNight from "../../images/d-n.png";
 import css from "./ThemeToggler.module.css"; 
 
 const ThemeToggler = () => {

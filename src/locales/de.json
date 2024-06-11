@@ -1,0 +1,102 @@
+{
+  "header": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "homePage": {
+    "greeting": "Hallo! Ich bin Cristina,",
+    "introduction": "engagierte Junior Frontend-Entwicklerin in Deutschland, spezialisiert auf die Erstellung eleganter und benutzerfreundlicher Web-Lösungen."
+  },
+  "aboutPage": {
+    "skillsHeader": "Fähigkeiten:",
+    "skills": [
+      {
+        "name": "HTML",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+      },
+      {
+        "name": "CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      },
+      {
+        "name": "JavaScript",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      },
+      { "name": "React.js", "url": "https://reactjs.org/" },
+      { "name": "Tailwind", "url": "https://tailwindcss.com/" },
+      { "name": "Typescript", "url": "https://www.typescriptlang.org/" },
+      { "name": "Git und GitHub", "url": "https://github.com/" },
+      { "name": "Next.js", "url": "https://nextjs.org/" }
+    ],
+    "languagesHeader": "Wir können auch sprechen in:",
+    "languages": [
+      { "language": "Rumänisch", "level": "Muttersprache" },
+      { "language": "Englisch", "level": "C1" },
+      { "language": "Griechisch", "level": "B2" },
+      { "language": "Deutsch", "level": "B1" }
+    ],
+    "certificationsHeader": "Meine Zertifikate",
+    "hello": "Hallo,",
+    "introText": [
+      "Ich bin Cristina Stoian, eine leidenschaftliche und angetriebene Junior Frontend-Entwicklerin mit einer starken Begeisterung für das Erstellen von ansprechenden und benutzerfreundlichen Web-Erfahrungen. Mit einem Hintergrund in zahlreichen Schulungen, Online-Kursen und Selbststudium, bin ich bestrebt, zu innovativen Projekten beizutragen und mit gleichgesinnten Fachleuten zusammenzuarbeiten.",
+      "Ich hatte die Gelegenheit, an einer Vielzahl von Projekten zu arbeiten, darunter das Erstellen responsiver Websites, die Entwicklung von Benutzeroberflächen und die Implementierung interaktiver Funktionen.",
+      "In diesem Portfolio finden Sie eine Sammlung von Projekten, die meine Expertise und Kreativität zeigen. Jedes Projekt stellt eine Reise des Problemlösens und der Exploration dar und zeigt mein Engagement, qualitativ hochwertige, benutzerzentrierte Lösungen zu liefern. Ich glaube an die Kraft der Technologie, eine positive Auswirkung auf die Welt zu haben, und ich freue mich, meine Beiträge mit Ihnen zu teilen. Vielen Dank für Ihren Besuch, und ich hoffe, Sie genießen es, meine Arbeit zu erkunden!"
+    ]
+  },
+  "projectsPage": {
+    "projects": [
+      { "name": "Ratgeber-Zettel", "path": "/advice-slip" },
+      { "name": "Mini Roboter", "path": "/joke-teller" },
+      { "name": "Aufgabenliste", "path": "/to-do" },
+      { "name": "Restaurant Figo", "path": "/figo-restaurant" }
+    ]
+  },
+  "contactPage": {
+    "contactMe": "Kontaktieren Sie mich",
+    "mobile": "Handy: +49 15731871996",
+    "hireMe": "Engagieren Sie mich",
+    "email": "cristina.stoian@yahoo.com",
+    "linkedInAlt": "LinkedIn-Link",
+    "githubAlt": "GitHub-Link",
+    "instagramAlt": "Instagram-Link"
+  },
+  "weatherMini": {
+    "checkWeather": "Prüfen Sie das Wetter in Ihrer Stadt:",
+    "temperature": "Temperatur: ",
+    "feelsLike": "Gefühlte Temperatur: ",
+    "wind": "Wind: ",
+    "weather": "Wetter: ",
+    "loading": "Wetterdaten werden geladen...",
+    "fetchError": "Es gab ein Problem beim Abrufen der Wetterdaten.",
+    "validCityError": "Bitte geben Sie einen gültigen Stadtnamen ein."
+  },
+  "advicePage": {
+    "pageTitle": "Ratgeber-Zettel",
+    "adviceDescription": "Diese App bietet ein klares HTML-Layout mit einer Überschrift für Beratungsnummern und einem Absatz zur Anzeige von Beratungstexten, ergänzt durch zwei Bilder - eines dekorativ und eines als Würfelsymbol, das als Knopf zum Abrufen neuer Ratschläge dient. Mithilfe von JavaScript werden notwendige DOM-Elemente ausgewählt, um Beratungstexte dynamisch anzuzeigen, die asynchron von der https://api.adviceslip.com/advice API abgerufen werden. Ein Würfelknopf löst Updates aus und bringt auf Klick frische Ratschläge, während CSS und Google Fonts eine stilvolle und lesbare Schnittstelle sicherstellen. Diese Einrichtung illustriert eine reaktionsfähige, benutzerinteraktive Webanwendung.",
+    "githubLink": "https://github.com/CristinaSt86/Advice_Slip",
+    "imageAlt": "Advice Slip Bild"
+  },
+  "jokeTellerPage": {
+    "pageTitle": "Witzeerzähler",
+    "jokeDescription": "Diese HTML-Datei, zusammen mit begleitenden CSS- und JavaScript-Dateien, erstellt eine einfache Webanwendung namens 'Joke Teller'. Die App besteht aus einem Behälter mit zwei Knöpfen: einem, um einen Witz anzufordern, und einem anderen, um zur 'Über'-Seite zu navigieren. Wenn der Benutzer auf den 'Erzähl mir einen Witz!' Knopf klickt, holt eine asynchrone JavaScript-Funktion einen Witz von der JokeAPI, sicherstellend, dass er für alle Zielgruppen sicher ist, indem NSFW, rassistischer, sexistischer und expliziter Inhalt ausgeschlossen wird. Der abgerufene Witz wird dann in das HTML-Div mit der ID 'speech' gerendert und mit der VoiceRSS API laut vorgelesen. Zusätzlich leitet das Klicken auf den 'Über die App' Knopf den Benutzer auf eine Über-Seite weiter.",
+    "githubLink": "https://github.com/CristinaSt86/Robot-Mini-App",
+    "imageAlt": "Mini-Roboter - Witz-Erzähler Bild"
+  },
+  "todoPage": {
+    "pageTitle": "Aufgabenliste",
+    "todoDescription": "Diese React-Anwendung verwaltet eine Liste von Aufgaben mit Formularvalidierung. Die Hauptfunktionen beinhalten das Anzeigen von Aufgaben, das Erlauben von Benutzern, Aufgaben hinzuzufügen, zu bearbeiten und zu löschen, und das Markieren von Aufgaben als abgeschlossen. Die App nutzt React State Hooks wie useState, um Todo-Daten und die Sichtbarkeit von Modals zu verwalten. Sie besteht aus Komponenten wie MyTodos, Modal und CreateTaskForm, die unterschiedliche Aspekte des Aufgabenmanagements behandeln. Die MyTodos-Komponente rendert die Liste der Aufgaben, sodass Benutzer mit ihnen interagieren können. Die Modal-Komponente behandelt das Anzeigen eines Modals zum Hinzufügen oder Bearbeiten von Aufgaben. Schließlich bietet die CreateTaskForm-Komponente ein Formular zum Hinzufügen oder Bearbeiten von Aufgaben, wobei die Formularvalidierung sicherstellt, dass Benutzer Daten in Formularfelder eingeben, bevor Einsendungen oder Bearbeitungen fortgesetzt werden können. Diese Validierung verbessert die Benutzererfahrung, indem sie die Benutzer auffordert, wesentliche Informationen, wie den Titel der Aufgabe, bereitzustellen, bevor sie fortfahren. Die App-Komponente integriert diese Komponenten und verwaltet Zustand und Ereignisbehandlung für die Todo-Funktionalität.",
+    "githubLink": "https://github.com/CristinaSt86/TodoApp",
+    "imageAlt": "Screenshot der Aufgaben-App"
+  },
+  "figoRestPage": {
+    "pageTitle": "Restaurant Figo",
+    "description": "Dieser HTML-Code repräsentiert eine moderne und visuell ansprechende Restaurant-Website. Er integriert verschiedene Merkmale und Elemente, um ein ansprechendes Benutzererlebnis zu schaffen. Das Design ist responsiv, was die Kompatibilität über verschiedene Geräte hinweg sicherstellt. Zu den Hauptmerkmalen gehören ein responsives Navigationsmenü, das es Benutzern ermöglicht, leicht zu verschiedenen Abschnitten wie Über uns, Menü, Service und Galerie zu navigieren. Der Hero-Bereich bietet ein fesselndes Bild mit einer prominenten Überschrift und einer Handlungsaufforderungstaste, die die Benutzer einlädt, weiter zu erkunden. Der Willkommensbereich begrüßt die Besucher des Restaurants und bietet einen kurzen Überblick über seine Angebote. Er umfasst ein einladendes Bild eines Kochs und ermutigt die Benutzer, mehr über die Geschichte des Restaurants zu erfahren. Die Gründe für die Wahl des Restaurants werden im Abschnitt 'Gründe für die Wahl' hervorgehoben, der wichtige Vorteile wie ein vielfältiges Menü, taschenfreundliche Lieferung und beste Angebote darstellt. Der Menükarussell präsentiert Menüpunkte in einem interaktiven Karussell und ermöglicht es den Benutzern, durch verschiedene Kategorien wie Frühstück, Mittagessen, Abendessen, Desserts, Suppen und Getränke zu blättern. Besucher können Testimonials von zufriedenen Kunden lesen, was zur Glaubwürdigkeit des Rufs des Restaurants beiträgt. Der Abschnitt 'Neueste Nachrichten' hält die Benutzer über die neuesten Nachrichten und Updates im Zusammenhang mit dem Restaurant auf dem Laufenden und bietet Artikel zu Themen wie spanische Vorspeisen, Wein und Käse und Tassen Kaffee. Der Fußzeilenbereich enthält wichtige Informationen wie Kontaktdetails, Social-Media-Links, Menüoptionen und Links zu wichtigen Seiten wie Über uns, Nutzungsbedingungen und Datenschutzrichtlinien. Verwendete Bibliotheken: jQuery, verwendet für DOM-Manipulation und Ereignisbehandlung; Owl Carousel, genutzt zur Erstellung des interaktiven Karussells für die Anzeige von Menüpunkten. Insgesamt zeigt dieser HTML-Code eine gut gestaltete und funktionale Restaurant-Website, die die Marke und die Angebote des Restaurants effektiv an potenzielle Kunden fördert.",
+    "githubLink": "https://github.com/CristinaSt86/Figo-Restaurant",
+    "imageAlt": "Galeriebild des Figo Restaurants"
+  },
+  "goToGithub": {
+    "linkText": "Zu GitHub"
+  }
+}

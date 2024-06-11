@@ -5,21 +5,23 @@ import Image from "../components/Image/Image";
 import miniRobotPic from "../images/miniRobotPic.jpg";
 import jokeDescription from "./jokeDescription.json";
 import ParagraphNight from "../components/ParagraphNight/ParagraphNight";
+import { useTranslation } from "react-i18next";
 
 const JokeTeller = () => {
+  const { t } = useTranslation();
   return (
     <div className={css.mainContainer}>
       <section className={css.aboutApp}>
-        <h1> Joke Teller</h1>
+        <h1>{t("jokeTellerPage.pageTitle")}</h1>
         <ParagraphNight>
-          <p>{jokeDescription.jokeDescription}</p>
+          <p>{t("jokeTellerPage.jokeDescription")}</p>
         </ParagraphNight>
       </section>
-      <GoToGithub to="https://github.com/CristinaSt86/Robot-Mini-App" />
+      <GoToGithub to={t("jokeTellerPage.githubLink")} />
       <section>
         <Image
           src={miniRobotPic}
-          alt="Mini Robot - Joke Teller"
+          alt={t("jokeTellerPage.imageAlt")}
           className={css.imagine}
         />
       </section>
