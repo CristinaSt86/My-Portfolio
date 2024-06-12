@@ -55,13 +55,22 @@
     ]
   },
   "contactPage": {
-    "contactMe": "Contact me",
+    "contactMe": "Let's Connect",
     "mobile": "Mobile: +49 15731871996",
     "hireMe": "Hire me",
     "email": "cristina.stoian@yahoo.com",
     "linkedInAlt": "linkedIn link",
     "githubAlt": "gitHub link",
     "instagramAlt": "instagram link"
+  },
+  "form": {
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "Message",
+    "submitButtonText": "Submit",
+    "successMessage": "Form submitted successfully!",
+    "errorMessage": "Failed to submit form. Please try again.",
+    "networkErrorMessage": "An error occurred. Please try again."
   },
   "weatherMini": {
     "checkWeather": "Is it umbrella or sunglasses weather in your town? Let's find out:",

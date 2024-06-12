@@ -54,13 +54,22 @@
     ]
   },
   "contactPage": {
-    "contactMe": "Kontaktieren Sie mich",
+    "contactMe": "Lass uns verbinden",
     "mobile": "Handy: +49 15731871996",
     "hireMe": "Engagieren Sie mich",
     "email": "cristina.stoian@yahoo.com",
     "linkedInAlt": "LinkedIn-Link",
     "githubAlt": "GitHub-Link",
     "instagramAlt": "Instagram-Link"
+  },
+  "form": {
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "E-Mail",
+    "messagePlaceholder": "Nachricht",
+    "submitButtonText": "Senden",
+    "successMessage": "Formular erfolgreich übermittelt!",
+    "errorMessage": "Fehler beim Senden des Formulars. Bitte versuchen Sie es erneut.",
+    "networkErrorMessage": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
   },
   "weatherMini": {
     "checkWeather": "Ist es Regenschirm oder Sonnenbrillenwetter in deiner Stadt? Lass es uns herausfinden:",

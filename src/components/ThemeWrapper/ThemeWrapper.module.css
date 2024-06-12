@@ -13,7 +13,7 @@ body {
 }
 
 .darkTheme {
-  background: url("../../images/earth.jpg");
+  background: url("../../images/night2.jpg");
   color: var(--text-night-mode);
   background-size: cover;
   background-position: center;
@@ -26,7 +26,7 @@ body {
   background-attachment: fixed;
 }
 .lightTheme {
-  background: url("../../images/10.jpg");
+  background: url("../../images/day.jpg");
   color: var(--text-day-mode);
   background-size: cover;
   background-position: center;
