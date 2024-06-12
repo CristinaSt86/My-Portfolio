@@ -47,7 +47,7 @@
   },
   "projectsPage": {
     "projects": [
-      { "name": "Ratgeber-Zettel", "path": "/advice-slip" },
+      { "name": "Kleine Tipps", "path": "/advice-slip" },
       { "name": "Mini Roboter", "path": "/joke-teller" },
       { "name": "Aufgabenliste", "path": "/to-do" },
       { "name": "Restaurant Figo", "path": "/figo-restaurant" }
@@ -63,7 +63,7 @@
     "instagramAlt": "Instagram-Link"
   },
   "weatherMini": {
-    "checkWeather": "Prüfen Sie das Wetter in Ihrer Stadt:",
+    "checkWeather": "Ist es Regenschirm oder Sonnenbrillenwetter in deiner Stadt? Lass es uns herausfinden:",
     "temperature": "Temperatur: ",
     "feelsLike": "Gefühlte Temperatur: ",
     "wind": "Wind: ",
@@ -73,10 +73,10 @@
     "validCityError": "Bitte geben Sie einen gültigen Stadtnamen ein."
   },
   "advicePage": {
-    "pageTitle": "Ratgeber-Zettel",
+    "pageTitle": "Kleine Tipps",
     "adviceDescription": "Diese App bietet ein klares HTML-Layout mit einer Überschrift für Beratungsnummern und einem Absatz zur Anzeige von Beratungstexten, ergänzt durch zwei Bilder - eines dekorativ und eines als Würfelsymbol, das als Knopf zum Abrufen neuer Ratschläge dient. Mithilfe von JavaScript werden notwendige DOM-Elemente ausgewählt, um Beratungstexte dynamisch anzuzeigen, die asynchron von der https://api.adviceslip.com/advice API abgerufen werden. Ein Würfelknopf löst Updates aus und bringt auf Klick frische Ratschläge, während CSS und Google Fonts eine stilvolle und lesbare Schnittstelle sicherstellen. Diese Einrichtung illustriert eine reaktionsfähige, benutzerinteraktive Webanwendung.",
     "githubLink": "https://github.com/CristinaSt86/Advice_Slip",
-    "imageAlt": "Advice Slip Bild"
+    "imageAlt": "Kleine Tipps Bild"
   },
   "jokeTellerPage": {
     "pageTitle": "Witzeerzähler",

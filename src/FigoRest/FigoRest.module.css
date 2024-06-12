@@ -58,6 +58,29 @@
   display: none;
 }
 
+x {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #374957;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btnImg {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+/* .customGalleryClass .image-gallery-left-nav .image-gallery-svg,
+.custom-image-gallery .image-gallery-right-nav .image-gallery-svg {
+  width: 1rem;
+  height: 1rem;
+} */
+
 @media only screen and (max-width: 767px) {
   .mainContainer {
     flex-direction: column;
