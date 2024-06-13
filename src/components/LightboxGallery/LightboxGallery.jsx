@@ -39,7 +39,11 @@ export const LightboxGallery = ({ images }) => {
         <>
           <button
             onClick={() => setIsOpen(false)}
-            style={{ borderRadius: "50%", border: "1px solid #374957" }}
+            style={{
+              borderRadius: "50%",
+              border: "1px solid #374957",
+              aspectRatio: "1",
+            }}
           >
             <img src={x} className={css.btnImg} alt="exit" />
           </button>

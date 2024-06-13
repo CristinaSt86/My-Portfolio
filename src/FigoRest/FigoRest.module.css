@@ -59,10 +59,11 @@
 }
 
 x {
-  width: 1.5rem;
+  width: auto;
   height: 1.5rem;
   border: 1px solid #374957;
   border-radius: 50%;
+  aspect-ratio: 1;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -74,12 +75,6 @@ x {
   width: 0.5rem;
   height: 0.5rem;
 }
-
-/* .customGalleryClass .image-gallery-left-nav .image-gallery-svg,
-.custom-image-gallery .image-gallery-right-nav .image-gallery-svg {
-  width: 1rem;
-  height: 1rem;
-} */
 
 @media only screen and (max-width: 767px) {
   .mainContainer {
@@ -99,7 +94,7 @@ x {
     padding: 0;
   }
 
-  /* .imgSection {
-    width: 100% !important;
-  } */
+  x{
+    transform: none; 
+  }
 }
