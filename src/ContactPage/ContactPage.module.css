@@ -70,8 +70,20 @@
   border-radius: 1rem;
 }
 
-.contactMe{
+.contactMe {
   text-align: center;
+}
+
+.msgHireMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.msgHireMe:hover {
+  transform: scale(1.1);
 }
 
 @media (min-width: 700px) and (max-width: 1044px) {

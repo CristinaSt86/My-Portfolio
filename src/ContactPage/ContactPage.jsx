@@ -9,6 +9,7 @@ import Image from "../components/Image/Image";
 import { useTheme } from "../ThemeContext";
 import Form from "../components/Form/Form";
 import { useTranslation } from "react-i18next";
+import msg from "../images/message.png";
 
 const ContactPage = () => {
   const { theme } = useTheme();
@@ -33,9 +34,12 @@ const ContactPage = () => {
           <h1 className={css.contactMe}>{t("contactPage.contactMe")}</h1>
           <h2 className={css.mobile}>{t("contactPage.mobile")}</h2>
           <h2>
-            <a href={`mailto:${emailAddress}`} className={css.mail}>
-              {t("contactPage.hireMe")}
-            </a>
+            <div className={css.msgHireMe}>
+              <a href={`mailto:${emailAddress}`} className={css.mail}>
+                {t("contactPage.hireMe")}
+              </a>
+              <img src={msg} alt="email" />
+            </div>
           </h2>
           <div className={css.contactLinks}>
             <Link to="https://github.com/CristinaSt86" target="blank">
