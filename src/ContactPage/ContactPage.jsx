@@ -59,13 +59,13 @@ const ContactPage = () => {
                 className={css.socialMediaImg}
               />
             </Link>
-            <Link to="https://www.instagram.com/crissalexx/" target="blank">
+            {/* <Link to="https://www.instagram.com/crissalexx/" target="blank">
               <Image
                 src={Instagram}
                 alt={t("contactPage.instagramAlt")}
                 className={css.socialMediaImg}
               />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

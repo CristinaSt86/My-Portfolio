@@ -50,7 +50,8 @@
       { "name": "Kleine Tipps", "path": "/advice-slip" },
       { "name": "Mini Roboter", "path": "/joke-teller" },
       { "name": "Aufgabenliste", "path": "/to-do" },
-      { "name": "Restaurant Figo", "path": "/figo-restaurant" }
+      { "name": "Restaurant Figo", "path": "/figo-restaurant" },
+      { "name": "Jogga Praktikum", "path": "/jogga-inter" }
     ]
   },
   "contactPage": {
@@ -104,6 +105,23 @@
     "description": "Dieser HTML-Code repräsentiert eine moderne und visuell ansprechende Restaurant-Website. Er integriert verschiedene Merkmale und Elemente, um ein ansprechendes Benutzererlebnis zu schaffen. Das Design ist responsiv, was die Kompatibilität über verschiedene Geräte hinweg sicherstellt. Zu den Hauptmerkmalen gehören ein responsives Navigationsmenü, das es Benutzern ermöglicht, leicht zu verschiedenen Abschnitten wie Über uns, Menü, Service und Galerie zu navigieren. Der Hero-Bereich bietet ein fesselndes Bild mit einer prominenten Überschrift und einer Handlungsaufforderungstaste, die die Benutzer einlädt, weiter zu erkunden. Der Willkommensbereich begrüßt die Besucher des Restaurants und bietet einen kurzen Überblick über seine Angebote. Er umfasst ein einladendes Bild eines Kochs und ermutigt die Benutzer, mehr über die Geschichte des Restaurants zu erfahren. Die Gründe für die Wahl des Restaurants werden im Abschnitt 'Gründe für die Wahl' hervorgehoben, der wichtige Vorteile wie ein vielfältiges Menü, taschenfreundliche Lieferung und beste Angebote darstellt. Der Menükarussell präsentiert Menüpunkte in einem interaktiven Karussell und ermöglicht es den Benutzern, durch verschiedene Kategorien wie Frühstück, Mittagessen, Abendessen, Desserts, Suppen und Getränke zu blättern. Besucher können Testimonials von zufriedenen Kunden lesen, was zur Glaubwürdigkeit des Rufs des Restaurants beiträgt. Der Abschnitt 'Neueste Nachrichten' hält die Benutzer über die neuesten Nachrichten und Updates im Zusammenhang mit dem Restaurant auf dem Laufenden und bietet Artikel zu Themen wie spanische Vorspeisen, Wein und Käse und Tassen Kaffee. Der Fußzeilenbereich enthält wichtige Informationen wie Kontaktdetails, Social-Media-Links, Menüoptionen und Links zu wichtigen Seiten wie Über uns, Nutzungsbedingungen und Datenschutzrichtlinien. Verwendete Bibliotheken: jQuery, verwendet für DOM-Manipulation und Ereignisbehandlung; Owl Carousel, genutzt zur Erstellung des interaktiven Karussells für die Anzeige von Menüpunkten. Insgesamt zeigt dieser HTML-Code eine gut gestaltete Restaurant-Website, die die Marke und die Angebote des Restaurants effektiv an potenzielle Kunden fördert.",
     "githubLink": "https://github.com/CristinaSt86/Figo-Restaurant",
     "imageAlt": "Galeriebild des Figo Restaurants"
+  },
+  "joggaPage": {
+    "pageTitle": "Übergang von Jogga.ro von React.js zu Next.js",
+    "description": "Während meines Praktikums bei Jogga spielte ich eine Schlüsselrolle bei der Migration der Unternehmenswebsite von React zu Next.js, um die Ladezeiten zu verkürzen und die Suchmaschinenoptimierung zu verbessern. Meine Aufgaben umfassten die Implementierung serverseitiger Renderings, die Optimierung von Bildladeprozessen und die Verbesserung der Zugänglichkeit und Interaktivität durch dynamisches Laden von Inhalten. Diese technischen Verbesserungen trugen dazu bei, die Benutzererfahrung erheblich zu verbessern und die Plattform für zukünftiges Wachstum vorzubereiten.",
+    "githubLink": "https://github.com/SkillBrain-com/europa-jogga-internship",
+    "imageAlt": "Interaktive Karte aus dem Jogga.ro Projekt",
+    "keyContributions": [
+      
+      "Verwendung von API-Eigenschaften zum Abrufen und Anzeigen von Daten, was die Benutzerinteraktion verbesserte.",
+      
+      "Aktualisierung und Implementierung von Benutzeroberflächenkomponenten zur Verbesserung der Benutzererfahrung.",
+      
+      "Implementierung des Lazy Loading für Bilder zur Reduzierung der Ladezeiten.",
+      
+      "Erstellung einer interaktiven Karte mit Markierungen für eine einfache Navigation."
+    ],
+    "outcome": "Das Projekt verbesserte nicht nur erheblich die Leistung von Jogga.ro, sondern erweiterte auch meine Fähigkeiten in Next.js und React erheblich. Dadurch sammelte ich wertvolle Erfahrungen mit modernsten Webentwicklungstechnologien, die mich auf komplexere Herausforderungen in zukünftigen Projekten vorbereiten."
   },
   "goToGithub": {
     "linkText": "Zu GitHub"

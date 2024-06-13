@@ -10,7 +10,7 @@
   display: flex;
   padding: 0.7rem;
   border-bottom: 3px solid #445561;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   color: var(--text-day-mode);
   font-size: 1.2rem;
   font-weight: 600;

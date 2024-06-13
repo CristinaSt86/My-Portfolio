@@ -19,6 +19,8 @@ const ProjectsPage = () => {
     { name: t("projectsPage.miniRobot"), path: "/joke-teller" },
     { name: t("projectsPage.toDoApp"), path: "/to-do" },
     { name: t("projectsPage.figoRestaurant"), path: "/figo-restaurant" },
+    { name: t("projectsPage.joggaInter"), path: "/jogga-inter" },
+
   ];
 
 

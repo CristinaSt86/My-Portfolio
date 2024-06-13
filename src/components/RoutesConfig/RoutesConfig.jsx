@@ -10,6 +10,7 @@ const AdviceSlipPage = lazy(() => import("../../AdviceSlip/AdviceSlip"));
 const JokeTellerPage = lazy(() => import("../../JokeTeller/JokeTeller"));
 const ToDoPage = lazy(() => import("../../ToDo/ToDo"));
 const FigoRestPage = lazy(() => import("../../FigoRest/FigoRest"));
+const JoggaInter = lazy(() => import("../../JoggaInter/JoggaInter"));
 
 const RoutesConfig = () => {
   const location = useLocation();
@@ -77,6 +78,14 @@ const RoutesConfig = () => {
         element={
           <PageTransition duration={1000}>
             <FigoRestPage />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/jogga-inter"
+        element={
+          <PageTransition duration={1000}>
+            <JoggaInter />
           </PageTransition>
         }
       />
