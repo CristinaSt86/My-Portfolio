@@ -1,6 +1,5 @@
 import React from "react";
 import css from "./ToDo.module.css";
-import toDoDescription from "./toDoDescription.json";
 import GoToGithub from "../components/GoToGithub/GoToGithub";
 import { LightboxGallery } from "../components/LightboxGallery/LightboxGallery";
 import Todo1 from "../images/Todo1.jpg";

@@ -45,7 +45,7 @@ const Services = () => {
       <h2>{t("limitationsTitle")}</h2>
 
       <ParagraphNight>
-        <dd>{t("limitationsDescription")}</dd>
+        <p>{t("limitationsDescription")}</p>
       </ParagraphNight>
     </div>
   );
