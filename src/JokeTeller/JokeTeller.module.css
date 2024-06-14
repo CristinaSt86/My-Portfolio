@@ -18,29 +18,10 @@
   border-radius: 1.5rem;
 }
 
-.aboutApp {
-  max-width: 100%;
-}
-
 @media only screen and (max-width: 767px) {
   .mainContainer {
     flex-direction: column;
     padding: 1rem;
     margin: 1rem 0.5rem;
-  }
-
-  .aboutApp p,
-  h1 {
-    text-align: center;
-    font-size: 1.2rem;
-  }
-
-  .aboutApp {
-    padding: 0;
-  }
-
-  .imagine {
-    width: 100%;
-    height: auto;
   }
 }

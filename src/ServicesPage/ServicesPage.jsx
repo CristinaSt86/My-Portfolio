@@ -32,7 +32,7 @@ const Services = () => {
           <dd>{t("versionControlDescription")}</dd>
         </dl>
       </ParagraphNight>
-      <h2>{t("additionalServicesTitle")}</h2>
+      <h2 className={css.servicesTitle}>{t("additionalServicesTitle")}</h2>
       <ParagraphNight>
         <dl>
           <dt>{t("thirdPartyIntegrationTitle")}</dt>
@@ -42,7 +42,7 @@ const Services = () => {
           <dd>{t("maintenanceDescription")}</dd>
         </dl>
       </ParagraphNight>
-      <h2>{t("limitationsTitle")}</h2>
+      <h2 className={css.servicesTitle}>{t("limitationsTitle")}</h2>
 
       <ParagraphNight>
         <p>{t("limitationsDescription")}</p>
