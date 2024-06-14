@@ -13,7 +13,7 @@
   margin-bottom: 3rem;
 }
 
-.servicesTitle{
+.servicesTitle {
   text-align: center;
 }
 
@@ -30,28 +30,13 @@ dt {
 }
 
 dd {
-    margin-bottom: 2.5rem;
-    line-height: 1.5rem;
-    font-size: 1.25rem;
-}
-
-.mainContainerNight {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.aboutApp {
-  max-width: 100%;
+  margin-bottom: 2.5rem;
+  line-height: 1.5rem;
+  font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 767px) {
-  /* .mainContainer {
-    flex-direction: column;
-    padding: 1rem;
-    margin: 1rem 0.5rem;
-  } */
-
-
-  dt{
+  dt {
     line-height: 2rem;
   }
 }
