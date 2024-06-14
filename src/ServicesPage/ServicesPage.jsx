@@ -7,7 +7,7 @@ const Services = () => {
   const { t } = useTranslation();
   return (
     <div className={css.mainContainer}>
-      <h1>{t("servicesTitle")}</h1>
+      <h1 className={css.servicesTitle}>{t("servicesTitle")}</h1>
       <ParagraphNight>
         <dl>
           <dt>{t("customWebDevTitle")}</dt>
