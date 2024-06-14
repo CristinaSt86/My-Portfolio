@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About me",
     "projects": "Projects",
+    "services": "Services",
     "contact": "Contact"
   },
   "homePage": {
@@ -43,7 +44,8 @@
     "introText": [
       "I'm Cristina Stoian, a passionate and driven junior frontend developer with a strong enthusiasm for creating engaging and user-friendly web experiences. With a background in multiple trainings, online courses and self-study, I am eager to contribute to innovative projects and collaborate with like-minded professionals.",
       "I've had the opportunity to work on a variety of projects, including building responsive websites, developing user interfaces, and implementing interactive features.",
-      "In this portfolio, you'll find a collection of projects that showcase my expertise and creativity. Each project represents a journey of problem-solving and exploration, demonstrating my commitment to delivering high-quality, user-centric solutions. I believe in the power of technology to make a positive impact on the world, and I'm excited to share my contributions with you. Thank you for visiting, and I hope you enjoy exploring my work!"
+      "In this portfolio, you'll find a collection of projects that showcase my expertise and creativity. Each project represents a journey of problem-solving and exploration, demonstrating my commitment to delivering high-quality, user-centric solutions. I believe in the power of technology to make a positive impact on the world, and I'm excited to share my contributions with you.",
+      "Thank you for visiting, and I hope you enjoy exploring my work!"
     ]
   },
   "projectsPage": {
@@ -93,7 +95,13 @@
     "pageTitle": "Joke Teller",
     "jokeDescription": "This HTML file, along with accompanying CSS and JavaScript files, creates a simple web application called 'Joke Teller.' The app consists of a container with two buttons: one to request a joke and another to navigate to an 'About' page. When the user clicks the 'Tell me a joke!' button, an asynchronous JavaScript function fetches a joke from the JokeAPI, ensuring it's safe for all audiences by excluding NSFW, racist, sexist, and explicit content. The fetched joke is then rendered in the HTML div with the id 'speech' and read aloud using the VoiceRSS API. Additionally, clicking the 'About app' button redirects the user to an about page.",
     "githubLink": "https://github.com/CristinaSt86/Robot-Mini-App",
-    "imageAlt": "Mini Robot - Joke Teller"
+    "imageAlt": "Mini Robot - Joke Teller",
+    "buttons": {
+      "tellJoke": "Tell me a joke!",
+      "stopJoke": "Quiet!"
+    },
+    "noJoke": "Click the button to hear a joke!",
+    "errorFetchingJoke": "Fetching joke failed"
   },
   "todoPage": {
     "pageTitle": "To Do App",
@@ -119,11 +127,32 @@
       "Created an interactive map with markers for easy navigation."
     ],
     "outcome": "The project not only significantly boosted Jogga.ro's performance, but it also substantially expanded my expertise in Next.js and React, providing me with valuable experience in cutting-edge web development technologies. This has equipped me for more complex challenges in future projects."
-
   },
   "goToGithub": {
     "linkText": "To GitHub"
   },
   "loadingMessage": "Cristina's portfolio is loading, enjoy it!",
-  "footerText": "© 2024 Cristina Stoian. All rights reserved."
+  "footerText": "© 2024 Cristina Stoian. All rights reserved.",
+  "servicesTitle": "Customized Solutions",
+  "customWebDevTitle": "Custom Website Development",
+  "customWebDevDescription": "Crafting responsive, interactive, and visually appealing websites using React. Ensuring compatibility across various devices and browsers.",
+  "uiUxDesignTitle": "UI/UX Design Implementation",
+  "uiUxDesignDescription": "Translating design prototypes (Figma, Adobe XD) into functional web interfaces. Prioritizing user experience and accessibility.",
+  "spaTitle": "Single Page Applications (SPA)",
+  "spaDescription": "Building dynamic and fast-loading SPAs with React. Leveraging modern JavaScript libraries and frameworks.",
+  "apiIntegrationTitle": "API Integration",
+  "apiIntegrationDescription": "Connecting frontend applications with third-party APIs for enhanced functionality. Handling data fetching, state management, and rendering efficiently.",
+  "formHandlingTitle": "Form Handling and Validation",
+  "formHandlingDescription": "Implementing complex forms with client-side validation. Using third-party services like Formspree or Google Forms for backend form handling.",
+  "performanceOptTitle": "Performance Optimization",
+  "performanceOptDescription": "Optimizing websites for speed and performance. Implementing best practices for code splitting, lazy loading, and caching.",
+  "versionControlTitle": "Version Control and Collaboration",
+  "versionControlDescription": "Using Git for version control. Collaborating with teams using GitHub, GitLab, or Bitbucket.",
+  "additionalServicesTitle": "Additional Services",
+  "thirdPartyIntegrationTitle": "Third-Party Integrations",
+  "thirdPartyIntegrationDescription": "Integrating external services such as content management systems (CMS), analytics tools, and social media widgets. Embedding interactive maps, chatbots, and other third-party widgets.",
+  "maintenanceTitle": "Maintenance and Support",
+  "maintenanceDescription": "Offering ongoing website maintenance and updates. Troubleshooting and fixing bugs.",
+  "limitationsTitle": "Limitations",
+  "limitationsDescription": "While I excel at creating robust and dynamic frontend solutions, I currently do not offer backend development or payment gateway integrations. However, I can collaborate with backend developers or suggest third-party services to fulfill these requirements."
 }

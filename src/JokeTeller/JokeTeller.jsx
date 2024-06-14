@@ -6,6 +6,7 @@ import miniRobotPic from "../images/miniRobotPic.jpg";
 import jokeDescription from "./jokeDescription.json";
 import ParagraphNight from "../components/ParagraphNight/ParagraphNight";
 import { useTranslation } from "react-i18next";
+import RobotApp from "../components/RobotApp/RobotApp";
 
 const JokeTeller = () => {
   const { t } = useTranslation();
@@ -19,11 +20,12 @@ const JokeTeller = () => {
       </section>
       <GoToGithub to={t("jokeTellerPage.githubLink")} />
       <section>
-        <Image
+        <RobotApp />
+        {/* <Image
           src={miniRobotPic}
           alt={t("jokeTellerPage.imageAlt")}
           className={css.imagine}
-        />
+        /> */}
       </section>
     </div>
   );

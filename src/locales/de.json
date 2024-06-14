@@ -3,6 +3,7 @@
     "home": "Startseite",
     "about": "Über mich",
     "projects": "Projekte",
+    "services": "Dienstleistungen",
     "contact": "Kontakt"
   },
   "homePage": {
@@ -42,7 +43,8 @@
     "introText": [
       "Ich bin Cristina Stoian, eine engagierte Junior Frontend-Entwicklerin mit einer großen Leidenschaft für die Gestaltung ansprechender und benutzerfreundlicher Web-Erlebnisse. Dank meines Fernstudiums, intensiver Schulungen und umfassenden Selbststudiums habe ich fundierte Kenntnisse erworben. Nun freue ich mich darauf, an innovativen Projekten mitzuwirken und mit gleichgesinnten Fachleuten zusammenzuarbeiten.",
       "Ich hatte die Gelegenheit, an einer Vielzahl von Projekten zu arbeiten, darunter das Erstellen responsiver Websites, Entwicklung von Benutzeroberflächen und die Implementierung interaktiver Funktionen.",
-      "In diesem Portfolio finden Sie eine Sammlung von Projekten, die meine Expertise und Kreativität zeigen. Jedes Projekt stellt eine Reise des Problemlösens und der Exploration dar und zeigt mein Engagement, qualitativ hochwertige, benutzerzentrierte Lösungen zu liefern. Ich glaube an die Kraft der Technologie, eine positive Auswirkung auf die Welt zu haben, und ich freue mich, meine Beiträge mit Ihnen zu teilen. Vielen Dank für Ihren Besuch, und ich hoffe, Sie genießen es, meine Arbeit zu erkunden!"
+      "In diesem Portfolio finden Sie eine Sammlung von Projekten, die meine Expertise und Kreativität zeigen. Jedes Projekt stellt eine Reise des Problemlösens und der Exploration dar und zeigt mein Engagement, qualitativ hochwertige, benutzerzentrierte Lösungen zu liefern. Ich glaube an die Kraft der Technologie, eine positive Auswirkung auf die Welt zu haben, und ich freue mich, meine Beiträge mit Ihnen zu teilen.",
+      "Vielen Dank für Ihren Besuch, und ich hoffe, Sie genießen es, meine Arbeit zu erkunden!"
     ]
   },
   "projectsPage": {
@@ -92,7 +94,13 @@
     "pageTitle": "Witzeerzähler",
     "jokeDescription": "Diese HTML-Datei, zusammen mit begleitenden CSS- und JavaScript-Dateien, erstellt eine einfache Webanwendung namens 'Joke Teller'. Die App besteht aus einem Behälter mit zwei Knöpfen: einem, um einen Witz anzufordern, und einem anderen, um zur 'Über'-Seite zu navigieren. Wenn der Benutzer auf den 'Erzähl mir einen Witz!' Knopf klickt, holt eine asynchrone JavaScript-Funktion einen Witz von der JokeAPI, sicherstellend, dass er für alle Zielgruppen sicher ist, indem NSFW, rassistischer, sexistischer und expliziter Inhalt ausgeschlossen wird. Der abgerufene Witz wird dann in das HTML-Div mit der ID 'speech' gerendert und mit der VoiceRSS API laut vorgelesen. Zusätzlich leitet das Klicken auf den 'Über die App' Knopf den Benutzer auf eine Über-Seite weiter.",
     "githubLink": "https://github.com/CristinaSt86/Robot-Mini-App",
-    "imageAlt": "Mini-Roboter - Witz-Erzähler Bild"
+    "imageAlt": "Mini-Roboter - Witz-Erzähler Bild",
+    "buttons": {
+      "tellJoke": "Erzähl mir einen Witz!",
+      "stopJoke": "Stille!"
+    },
+    "noJoke": "Klicken Sie auf die Schaltfläche, um einen Witz zu hören!",
+    "errorFetchingJoke": "Witz abrufen fehlgeschlagen"
   },
   "todoPage": {
     "pageTitle": "Aufgabenliste",
@@ -112,13 +120,12 @@
     "githubLink": "https://github.com/SkillBrain-com/europa-jogga-internship",
     "imageAlt": "Interaktive Karte aus dem Jogga.ro Projekt",
     "keyContributions": [
-      
       "Verwendung von API-Eigenschaften zum Abrufen und Anzeigen von Daten, was die Benutzerinteraktion verbesserte.",
-      
+
       "Aktualisierung und Implementierung von Benutzeroberflächenkomponenten zur Verbesserung der Benutzererfahrung.",
-      
+
       "Implementierung des Lazy Loading für Bilder zur Reduzierung der Ladezeiten.",
-      
+
       "Erstellung einer interaktiven Karte mit Markierungen für eine einfache Navigation."
     ],
     "outcome": "Das Projekt verbesserte nicht nur erheblich die Leistung von Jogga.ro, sondern erweiterte auch meine Fähigkeiten in Next.js und React erheblich. Dadurch sammelte ich wertvolle Erfahrungen mit modernsten Webentwicklungstechnologien, die mich auf komplexere Herausforderungen in zukünftigen Projekten vorbereiten."
@@ -127,5 +134,27 @@
     "linkText": "Zu GitHub"
   },
   "loadingMessage": "Cristinas Portfolio wird geladen, viel Spaß dabei!",
-  "footerText": "© 2024 Cristina Stoian. Alle Rechte vorbehalten."
+  "footerText": "© 2024 Cristina Stoian. Alle Rechte vorbehalten.",
+  "servicesTitle": "Maßgeschneiderte Lösungen",
+  "customWebDevTitle": "Individuelle Webseitenentwicklung",
+  "customWebDevDescription": "Erstellung von responsiven, interaktiven und visuell ansprechenden Webseiten mit React. Gewährleistung der Kompatibilität über verschiedene Geräte und Browser hinweg.",
+  "uiUxDesignTitle": "UI/UX Design Implementierung",
+  "uiUxDesignDescription": "Umsetzung von Designprototypen (Figma, Adobe XD) in funktionale Webinterfaces. Priorisierung von Benutzererfahrung und Zugänglichkeit.",
+  "spaTitle": "Single Page Applications (SPA)",
+  "spaDescription": "Entwicklung von dynamischen und schnell ladenden SPAs mit React. Nutzung moderner JavaScript-Bibliotheken und Frameworks.",
+  "apiIntegrationTitle": "API-Integration",
+  "apiIntegrationDescription": "Anbindung von Frontend-Anwendungen an Drittanbieter-APIs für erweiterte Funktionalität. Effizientes Datenhandling, Zustandsverwaltung und Rendering.",
+  "formHandlingTitle": "Formularverarbeitung und Validierung",
+  "formHandlingDescription": "Implementierung komplexer Formulare mit clientseitiger Validierung. Nutzung von Diensten Dritter wie Formspree oder Google Forms für die Backend-Formularverarbeitung.",
+  "performanceOptTitle": "Leistungsoptimierung",
+  "performanceOptDescription": "Optimierung von Webseiten für Geschwindigkeit und Leistung. Anwendung von Best Practices für Code-Splitting, Lazy Loading und Caching.",
+  "versionControlTitle": "Versionskontrolle und Zusammenarbeit",
+  "versionControlDescription": "Verwendung von Git für die Versionskontrolle. Zusammenarbeit mit Teams über GitHub, GitLab oder Bitbucket.",
+  "additionalServicesTitle": "Zusätzliche Dienstleistungen",
+  "thirdPartyIntegrationTitle": "Integration von Drittanbieter-Diensten",
+  "thirdPartyIntegrationDescription": "Integration externer Dienste wie Content-Management-Systeme (CMS), Analysewerkzeuge und Social-Media-Widgets. Einbindung von interaktiven Karten, Chatbots und anderen Widgets von Drittanbietern.",
+  "maintenanceTitle": "Wartung und Unterstützung",
+  "maintenanceDescription": "Angebot von fortlaufender Wartung und Aktualisierungen der Webseite. Fehlerbehebung und Bugfixing.",
+  "limitationsTitle": "Einschränkungen",
+  "limitationsDescription": "Obwohl ich darin ausgezeichnet bin, robuste und dynamische Frontendlösungen zu erstellen, biete ich derzeit keine Backend-Entwicklung oder Zahlungsgateway-Integrationen an. Ich kann jedoch mit Backend-Entwicklern zusammenarbeiten oder Drittanbieter-Dienste vorschlagen, um diese Anforderungen zu erfüllen."
 }

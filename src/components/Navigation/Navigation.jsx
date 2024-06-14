@@ -30,6 +30,7 @@ const Navigation = () => {
     { name: t("header.home"), path: "/" },
     { name: t("header.about"), path: "/about" },
     { name: t("header.projects"), path: "/projects" },
+    { name: t("header.services"), path: "/services" },
     { name: t("header.contact"), path: "/contact" },
   ];
 
