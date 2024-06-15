@@ -124,7 +124,7 @@
   .mainContainer {
     flex-direction: column-reverse;
     gap: 0.5rem;
-    padding: 1rem 1rem;
+    padding: 1rem;
   }
 
   .certificationsContainer{

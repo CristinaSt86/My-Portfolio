@@ -10,7 +10,7 @@ const WeatherMini = () => {
     feels_like: {},
     wind: {},
   });
-  const [city, setCity] = useState("New York");
+  const [city, setCity] = useState("Berlin");
   const [error, setError] = useState(null);
   const apiKey = "9593e8feaedbaedfb38ea35714625903";
 

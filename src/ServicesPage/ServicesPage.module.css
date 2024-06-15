@@ -39,4 +39,8 @@ dd {
   dt {
     line-height: 2rem;
   }
+
+  .mainContainer{
+    padding: 1rem;
+  }
 }

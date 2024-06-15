@@ -20,12 +20,12 @@ const JokeTeller = () => {
       </section>
       <GoToGithub to={t("jokeTellerPage.githubLink")} />
       <section>
-        <RobotApp />
-        {/* <Image
+        {/* <RobotApp /> */}
+         <Image
           src={miniRobotPic}
           alt={t("jokeTellerPage.imageAlt")}
           className={css.imagine}
-        /> */}
+        /> 
       </section>
     </div>
   );
