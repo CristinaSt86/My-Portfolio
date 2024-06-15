@@ -40,9 +40,9 @@ const ProjectsPage = () => {
         </ul>
       </div>
       <div>
-        <WeatherMini />
+        <RobotApp />
       </div>
-      <RobotApp />
+      <WeatherMini />
     </div>
   );
 };
