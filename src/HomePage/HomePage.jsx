@@ -14,11 +14,11 @@ const HomePage = () => {
   return (
     <div className={css.mainContainer}>
       <Image src={Cris} alt={t("homePage.imageAlt")} className={imagineDark} />
-      <h2 className={css.titlu}>
+      <h1 className={css.titlu}>
         {t("homePage.greeting")}
         <br />
         {t("homePage.introduction")}
-      </h2>
+      </h1>
     </div>
   );
 };

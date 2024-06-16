@@ -42,7 +42,7 @@
     "certificationsHeader": "My Certifications",
     "hello": "Hey there,",
     "introText": [
-      "I'm Cristina Stoian, a passionate and driven frontend developer with a strong enthusiasm for creating engaging and user-friendly web experiences. With a background in multiple trainings, online courses and self-study, I am eager to contribute to innovative projects and collaborate with like-minded professionals.",
+      "I'm Cristina Stoian, a passionate and driven frontend developer with a strong enthusiasm for creating engaging and user-friendly web experiences. With a background in multiple accredited training programs, online courses and intensive self-study, I am eager to contribute to innovative projects and collaborate with like-minded professionals.",
       "I've had the opportunity to work on a variety of projects, including building responsive websites, developing user interfaces, and implementing interactive features.",
       "In this portfolio, you'll find a collection of projects that showcase my expertise and creativity. Each project represents a journey of problem-solving and exploration, demonstrating my commitment to delivering high-quality, user-centric solutions. I believe in the power of technology to make a positive impact on the world, and I'm excited to share my contributions with you.",
       "Thank you for visiting, and I hope you enjoy exploring my work!"
@@ -147,7 +147,7 @@
   "performanceOptTitle": "Performance Optimization",
   "performanceOptDescription": "Optimizing websites for speed and performance. Implementing best practices for code splitting, lazy loading, and caching.",
   "versionControlTitle": "Version Control and Collaboration",
-  "versionControlDescription": "Using Git for version control. Collaborating with teams using GitHub, GitLab, or Bitbucket.",
+  "versionControlDescription": "Using Git for version control. Collaborating with teams using GitHub.",
   "additionalServicesTitle": "Additional Services",
   "thirdPartyIntegrationTitle": "Third-Party Integrations",
   "thirdPartyIntegrationDescription": "Integrating external services such as content management systems (CMS), analytics tools, and social media widgets. Embedding interactive maps, chatbots, and other third-party widgets.",

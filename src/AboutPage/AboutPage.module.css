@@ -102,6 +102,11 @@
   font-size: 1.2rem;
 }
 
+hr{       
+  border-top: 2px solid #3747d6;
+  width: 10rem;
+}
+
 @media only screen and (max-width: 800px) {
   .aboutBackground {
     width: 100%;

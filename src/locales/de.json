@@ -149,7 +149,7 @@
   "performanceOptTitle": "Leistungsoptimierung",
   "performanceOptDescription": "Optimierung von Webseiten für Geschwindigkeit und Leistung. Anwendung von Best Practices für Code-Splitting, Lazy Loading und Caching.",
   "versionControlTitle": "Versionskontrolle und Zusammenarbeit",
-  "versionControlDescription": "Verwendung von Git für die Versionskontrolle. Zusammenarbeit mit Teams über GitHub, GitLab oder Bitbucket.",
+  "versionControlDescription": "Verwendung von Git für die Versionskontrolle. Zusammenarbeit mit Teams über GitHub.",
   "additionalServicesTitle": "Zusätzliche Dienstleistungen",
   "thirdPartyIntegrationTitle": "Integration von Drittanbieter-Diensten",
   "thirdPartyIntegrationDescription": "Integration externer Dienste wie Content-Management-Systeme (CMS), Analysewerkzeuge und Social-Media-Widgets. Einbindung von interaktiven Karten, Chatbots und anderen Widgets von Drittanbietern.",

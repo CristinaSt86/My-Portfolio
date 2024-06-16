@@ -2,7 +2,6 @@ import React from "react";
 import css from "./AdviceSlip.module.css";
 import Image from "../components/Image/Image";
 import AdvicePic from "../images/AdvicePic.jpg";
-import adviceDescription from "./adviceDescription.json";
 import GoToGithub from "../components/GoToGithub/GoToGithub";
 import ParagraphNight from "../components/ParagraphNight/ParagraphNight";
 import { useTranslation } from "react-i18next";

@@ -1,6 +1,5 @@
 import React from "react";
 import css from "./AboutPage.module.css";
-import aboutMeText from "./aboutMeText.json";
 import { Link } from "react-router-dom";
 import ParagraphNight from "../components/ParagraphNight/ParagraphNight";
 import { LightboxGallery } from "../components/LightboxGallery/LightboxGallery";
@@ -75,13 +74,15 @@ const AboutPage = () => {
             ))}
           </ul>
         </div>
+        <hr />
         <div className={css.foreignList}>
           <h2>{t("aboutPage.languagesHeader")}</h2>
           <ul className={css.spokenLan}>
             {languages.map((lang, index) => (
               <li key={index}>
                 <span className={css.boldLang}>{lang.language}</span>
-                <br /> - {lang.level}<br />
+                <br /> - {lang.level}
+                <br />
                 <br />
               </li>
             ))}

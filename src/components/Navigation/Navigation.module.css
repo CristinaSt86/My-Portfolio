@@ -18,7 +18,7 @@
   transition: transform 0.3s ease;
 }
 
-.links:hover{
+.links:hover {
   transform: scale(1.1);
   background: var(--text-night-mode);
 }
@@ -30,7 +30,7 @@
   border-radius: 1rem;
 }
 
-.linksNight:hover{
+.linksNight:hover {
   color: var(--text-day-mode);
   border-bottom: 3px solid #445561;
 }
@@ -62,16 +62,16 @@
     left: 0;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 0 1rem 1rem 0;
-    transform: translateX(-100%); 
-    transition: transform 0.7s ease, opacity 0.7s ease; /* Smooth transition for transform and opacity */
-    opacity: 0; /* Start invisible */
-    pointer-events: none; /* Prevent interaction when off-screen */
+    transform: translateX(-100%);
+    transition: transform 0.7s ease, opacity 0.7s ease;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .show {
-    transform: translateX(0%); /* Move into view */
-    opacity: 1; /* Make fully visible */
-    pointer-events: auto; /* Allow interaction */
+    transform: translateX(0%);
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .links {
@@ -81,4 +81,21 @@
     border-bottom: 2px solid #445561;
     display: inline;
   }
-}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .link {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+  }
+} 
+

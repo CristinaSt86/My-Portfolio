@@ -50,6 +50,7 @@ const Navigation = () => {
             key={index}
             to={link.path}
             className={linksDarkMode}
+            style={{ animationDelay: `${index * 0.1}s` }} 
             onClick={toggleMenu}
           >
             {link.name}
