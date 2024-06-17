@@ -9,7 +9,6 @@ const PageTransition = ({ children, duration = 100 }) => {
     }, 100);
 
     return () => {
-      console.log("Clearing timeout");
       clearTimeout(timer);
     };
   }, []);

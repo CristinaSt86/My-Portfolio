@@ -14,13 +14,6 @@
   margin-bottom: 3rem;
 }
 
-/* .imagine {
-  width: 18rem;
-  height: 18rem;
-  object-fit: cover;
-  border-radius: 1rem;
-} */
-
 .aboutApp {
   max-width: 100%;
 }
@@ -29,14 +22,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 0.6rem;
 }
 
 .imagine {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 1rem;
   cursor: pointer;
 }
 

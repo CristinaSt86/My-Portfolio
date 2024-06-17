@@ -22,7 +22,6 @@ const Form = () => {
     }));
   };
 
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     // POST data to Formspree

@@ -1,6 +1,7 @@
 import React, { lazy } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import PageTransition from "../PageTransition/PageTransition";
+import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
 
 const HomePage = lazy(() => import("../../HomePage/HomePage"));
 const AboutPage = lazy(() => import("../../AboutPage/AboutPage"));
@@ -22,7 +23,9 @@ const RoutesConfig = () => {
         path="/"
         element={
           <PageTransition duration={1000}>
-            <HomePage />
+            <ErrorBoundary>
+              <HomePage />
+            </ErrorBoundary>
           </PageTransition>
         }
       />
@@ -30,7 +33,9 @@ const RoutesConfig = () => {
         path="/about"
         element={
           <PageTransition duration={1000}>
-            <AboutPage />
+            <ErrorBoundary>
+              <AboutPage />
+            </ErrorBoundary>
           </PageTransition>
         }
       />

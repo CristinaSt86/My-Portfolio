@@ -11,7 +11,7 @@ const ParagraphDark = theme === 'dark' ? css.paragraphNight : '';
 
 
   return (
-    <p className={ParagraphDark}>{children}</p>
+    <div className={ParagraphDark}>{children}</div>
   )
 }
 

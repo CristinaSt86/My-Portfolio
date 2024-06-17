@@ -73,6 +73,7 @@ const AboutPage = () => {
               </li>
             ))}
           </ul>
+          
         </div>
         <hr />
         <div className={css.foreignList}>
