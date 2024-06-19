@@ -85,18 +85,22 @@
   font-weight: 600;
   text-decoration: none;
   transition: transform 0.3s ease;
+  border-top: 3px solid var(--text-night-mode);
+  border-bottom: 3px solid var(--text-night-mode);
 }
 
 .listItem a,
 .listItem a:visited {
   text-decoration: none;
-  color: inherit; /* Ensures the link color matches the text color */
+  color: inherit; 
 }
 
 .listItem:hover {
   background: var(--text-night-mode);
   color: #3747d6;
   transform: scale(1.1);
+  border-top: 3px solid  #3747d6;
+  border-bottom: 3px solid  #3747d6;
 }
 
 .paragraf {

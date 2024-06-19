@@ -1,52 +1,72 @@
 import React from "react";
 import css from "./ServicesPage.module.css";
-import ParagraphNight from "../components/ParagraphNight/ParagraphNight";
 import { useTranslation } from "react-i18next";
+import FlippCard from "../components/FlippCard/FlippCard";
 
 const Services = () => {
   const { t } = useTranslation();
+
+  const services = [
+    {
+      key: "customWebDev",
+      title: t("customWebDevTitle"),
+      description: t("customWebDevDescription"),
+    },
+    {
+      key: "uiUxDesign",
+      title: t("uiUxDesignTitle"),
+      description: t("uiUxDesignDescription"),
+    },
+    { key: "spa", title: t("spaTitle"), description: t("spaDescription") },
+    {
+      key: "apiIntegration",
+      title: t("apiIntegrationTitle"),
+      description: t("apiIntegrationDescription"),
+    },
+    {
+      key: "formHandling",
+      title: t("formHandlingTitle"),
+      description: t("formHandlingDescription"),
+    },
+    {
+      key: "performanceOpt",
+      title: t("performanceOptTitle"),
+      description: t("performanceOptDescription"),
+    },
+    {
+      key: "versionControl",
+      title: t("versionControlTitle"),
+      description: t("versionControlDescription"),
+    },
+    {
+      key: "thirdPartyIntegration",
+      title: t("thirdPartyIntegrationTitle"),
+      description: t("thirdPartyIntegrationDescription"),
+    },
+    {
+      key: "maintenance",
+      title: t("maintenanceTitle"),
+      description: t("maintenanceDescription"),
+    },
+    {
+      key: "limitations",
+      title: t("limitationsTitle"),
+      description: t("limitationsDescription"),
+    },
+  ];
+
   return (
-    <div className={css.mainContainer}>
+    <div className={css.services}>
       <h1 className={css.servicesTitle}>{t("servicesTitle")}</h1>
-      <ParagraphNight>
-        <dl>
-          <dt>{t("customWebDevTitle")}</dt>
-          <dd>{t("customWebDevDescription")}</dd>
-
-          <dt>{t("uiUxDesignTitle")}</dt>
-          <dd>{t("uiUxDesignDescription")}</dd>
-
-          <dt>{t("spaTitle")}</dt>
-          <dd>{t("spaDescription")}</dd>
-
-          <dt>{t("apiIntegrationTitle")}</dt>
-          <dd>{t("apiIntegrationDescription")}</dd>
-
-          <dt>{t("formHandlingTitle")}</dt>
-          <dd>{t("formHandlingDescription")}</dd>
-
-          <dt>{t("performanceOptTitle")}</dt>
-          <dd>{t("performanceOptDescription")}</dd>
-
-          <dt>{t("versionControlTitle")}</dt>
-          <dd>{t("versionControlDescription")}</dd>
-        </dl>
-      </ParagraphNight>
-      <h2 className={css.servicesTitle}>{t("additionalServicesTitle")}</h2>
-      <ParagraphNight>
-        <dl>
-          <dt>{t("thirdPartyIntegrationTitle")}</dt>
-          <dd>{t("thirdPartyIntegrationDescription")}</dd>
-
-          <dt>{t("maintenanceTitle")}</dt>
-          <dd>{t("maintenanceDescription")}</dd>
-        </dl>
-      </ParagraphNight>
-      <h2 className={css.servicesTitle}>{t("limitationsTitle")}</h2>
-
-      <ParagraphNight>
-        <p>{t("limitationsDescription")}</p>
-      </ParagraphNight>
+      <div className={css.mainContainer}>
+        {services.map((service) => (
+          <FlippCard
+            key={service.key}
+            title={service.title}
+            description={service.description}
+          />
+        ))}
+      </div>
     </div>
   );
 };
