@@ -10,8 +10,7 @@
 }
 .mainContainer {
   max-width: 1200px;
-  margin: auto;
-  padding: 2rem 2.3rem;
+  padding: 4rem 2.3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -19,11 +18,17 @@
   gap: 5rem;
   background: #ffffff33;
   border-radius: 1rem;
+  margin: 0 3rem 3rem 3rem;
 }
 
 @media (max-width: 600px){
+ .mainContainer{
+  flex-direction: column;
+  padding-bottom: 7rem;
+  margin-bottom: 3rem;
+ }
   .servicesTitle{
-    margin: 1rem;
     text-align: center;
+    margin: 1rem;
   }
 }
