@@ -58,7 +58,6 @@ export const LightboxGallery = ({ images }) => {
             showFullscreenButton={false}
             showIndex={false}
             showBullets={true}
-            additionalClass={css.customGalleryClass}
           />
         </>
       )}

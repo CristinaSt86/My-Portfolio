@@ -36,6 +36,8 @@
 
 .front {
   background-color: #fff;
+  gap: 2rem;
+  flex-direction: column;
   color: #374957;
   transition: transform 0.3s ease;
 }

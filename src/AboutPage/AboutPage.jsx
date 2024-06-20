@@ -62,26 +62,6 @@ const AboutPage = () => {
 
   return (
     <div className={css.mainContainer}>
-      <main>
-        <div className={css.aboutBackground}>
-          <h2 className={css.hey}>{t("aboutPage.hello")}</h2>
-          <ParagraphNight>
-            {t("aboutPage.introText", { returnObjects: true }).map(
-              (text, index) => (
-                <p className={css.paragraph} key={index}>
-                  {text}
-                </p>
-              )
-            )}
-          </ParagraphNight>
-        </div>
-        <div className={css.certificationsContainer}>
-          <h2>{t("aboutPage.certificationsHeader")}</h2>
-          <div style={{ width: "100%" }}>
-            <LightboxGallery images={certifications} />
-          </div>
-        </div>
-      </main>
       <aside className={css.aside}>
         <div>
           <h2 className={css.skills}>{t("aboutPage.skillsHeader")}</h2>
@@ -110,6 +90,26 @@ const AboutPage = () => {
           </ul>
         </div>
       </aside>
+      <main className={css.main2}>
+        <div className={css.aboutBackground}>
+          <h2 className={css.hey}>{t("aboutPage.hello")}</h2>
+          <ParagraphNight>
+            {t("aboutPage.introText", { returnObjects: true }).map(
+              (text, index) => (
+                <p className={css.paragraph} key={index}>
+                  {text}
+                </p>
+              )
+            )}
+          </ParagraphNight>
+        </div>
+        <div className={css.certificationsContainer}>
+          <h2>{t("aboutPage.certificationsHeader")}</h2>
+          <section style={{ width: "100%" }}>
+            <LightboxGallery images={certifications} />
+          </section>
+        </div>
+      </main>
     </div>
   );
 };

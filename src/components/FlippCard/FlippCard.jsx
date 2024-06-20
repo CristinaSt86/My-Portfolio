@@ -13,7 +13,11 @@ const FlippCard = ({ title, description }) => {
   return (
     <div onClick={handleFlipping}>
       <div className={`${css.card} ${isFlipped ? css.flipped : ""}`}>
-        <div className={css.front}>{title}</div>
+        <div className={css.front}>
+          {title}
+          <div className={css.flipInstruction}>Click to flip</div>
+        </div>
+
         <div className={css.back}>{description}</div>
       </div>
     </div>
