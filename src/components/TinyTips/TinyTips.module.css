@@ -52,9 +52,9 @@
 
 .zar {
   position: absolute;
-  bottom: -2.2rem;
+  bottom: -2rem;
   border: none;
-  background-color: #53ffab;
+  background-color: transparent;
   aspect-ratio: 1/1;
 }
 
