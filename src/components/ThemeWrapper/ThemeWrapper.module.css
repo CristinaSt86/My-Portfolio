@@ -38,3 +38,9 @@ body {
   box-sizing: border-box;
   background-attachment: fixed;
 }
+
+@media (max-width: 767px) {
+  body {
+    background-attachment: scroll;
+  }
+}
