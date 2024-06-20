@@ -9,10 +9,9 @@
   justify-content: center;
   align-items: center;
   background: #ffffff33;
-  border-radius: 1.5rem;
+  border-radius: 0 5rem 5rem 0;
   font-size: 1.2rem;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin: 3rem 3rem 3rem 0;
 }
 
 .aboutApp {
@@ -75,7 +74,7 @@ x {
     flex-direction: column;
     flex-wrap: nowrap;
     padding: 1rem;
-    margin: 1rem 0.5rem;
+    margin: 2rem 2rem 2rem 0;
   }
 
   .aboutApp {

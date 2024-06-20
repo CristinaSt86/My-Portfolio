@@ -111,6 +111,19 @@ hr {
   width: 10rem;
 }
 
+.icon{
+  width: 3rem;
+  height: 3rem;
+}
+
+.nameIcon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 @media only screen and (max-width: 800px) {
   .aboutBackground {
     width: 100%;

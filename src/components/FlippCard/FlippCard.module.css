@@ -40,6 +40,7 @@
   flex-direction: column;
   color: #374957;
   transition: transform 0.3s ease;
+  font-weight: 600;
 }
 
 .front:hover {
@@ -52,6 +53,11 @@
   background-color: #374957;
   color: #fff;
   transform: rotateY(180deg);
+}
+
+.icon{
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 @media (max-width: 600px) {
