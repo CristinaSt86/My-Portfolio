@@ -1,9 +1,9 @@
 import React from "react";
 import css from "./JokeTeller.module.css";
 import GoToGithub from "../components/GoToGithub/GoToGithub";
-import Image from "../components/Image/Image";
-import miniRobotPic from "../images/miniRobotPic.jpg";
-import jokeDescription from "./jokeDescription.json";
+// import Image from "../components/Image/Image";
+// import miniRobotPic from "../images/miniRobotPic.jpg";
+// import jokeDescription from "./jokeDescription.json";
 import ParagraphNight from "../components/ParagraphNight/ParagraphNight";
 import { useTranslation } from "react-i18next";
 import RobotApp from "../components/RobotApp/RobotApp";
@@ -20,12 +20,12 @@ const JokeTeller = () => {
       </section>
       <GoToGithub to={t("jokeTellerPage.githubLink")} />
       <section>
-        {/* <RobotApp /> */}
-         <Image
+        <RobotApp />
+         {/* <Image
           src={miniRobotPic}
           alt={t("jokeTellerPage.imageAlt")}
           className={css.imagine}
-        /> 
+        />  */}
       </section>
     </div>
   );

@@ -14,11 +14,11 @@
     "skillsHeader": "Fähigkeiten:",
     "skills": [
       {
-        "name": "HTML",
+        "name": "HTML5",
         "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
       },
       {
-        "name": "CSS",
+        "name": "CSS3",
         "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
       },
       {
@@ -26,7 +26,7 @@
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       },
       { "name": "React.js", "url": "https://reactjs.org/" },
-      { "name": "Tailwind", "url": "https://tailwindcss.com/" },
+      { "name": "TailwindCSS", "url": "https://tailwindcss.com/" },
       { "name": "Typescript", "url": "https://www.typescriptlang.org/" },
       { "name": "Git und GitHub", "url": "https://github.com/" },
       { "name": "Next.js", "url": "https://nextjs.org/" }
@@ -156,5 +156,9 @@
   "maintenanceTitle": "Wartung und Unterstützung",
   "maintenanceDescription": "Angebot von fortlaufender Wartung und Aktualisierungen der Webseite. Fehlerbehebung und Bugfixing.",
   "limitationsTitle": "Einschränkungen",
-  "limitationsDescription":"Ich habe mich auf Front-End-Lösungen spezialisiert und biete daher keine Back-End-Entwicklung oder Zahlungsintegrationen an. Bei Bedarf vermittle ich gerne den Kontakt zu Back-End-Experten oder Drittanbietern."
+  "limitationsDescription": "Ich habe mich auf Front-End-Lösungen spezialisiert und biete daher keine Back-End-Entwicklung oder Zahlungsintegrationen an. Bei Bedarf vermittle ich gerne den Kontakt zu Back-End-Experten oder Drittanbietern.",
+  "tinyTips": {
+    "TinyTipsTitle": "RAT #",
+    "rollForNewAdvice": "Für neuen Rat würfeln"
+  }
 }

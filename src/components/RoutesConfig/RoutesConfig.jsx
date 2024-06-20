@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import PageTransition from "../PageTransition/PageTransition";
 import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
 
+
 const HomePage = lazy(() => import("../../HomePage/HomePage"));
 const AboutPage = lazy(() => import("../../AboutPage/AboutPage"));
 const ContactPage = lazy(() => import("../../ContactPage/ContactPage"));
@@ -13,6 +14,7 @@ const ToDoPage = lazy(() => import("../../ToDo/ToDo"));
 const FigoRestPage = lazy(() => import("../../FigoRest/FigoRest"));
 const JoggaInter = lazy(() => import("../../JoggaInter/JoggaInter"));
 const ServicesPage = lazy(() => import("../../ServicesPage/ServicesPage"));
+
 
 const RoutesConfig = () => {
   const location = useLocation();
@@ -103,6 +105,7 @@ const RoutesConfig = () => {
           </PageTransition>
         }
       />
+  
     </Routes>
   );
 };

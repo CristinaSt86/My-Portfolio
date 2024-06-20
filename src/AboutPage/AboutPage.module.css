@@ -32,8 +32,6 @@
   border: 3px solid #3747d6;
   border-radius: 1rem;
   padding: 1rem;
-  box-sizing: border-box;
-  height: fit-content;
 }
 
 .spokenLan {
@@ -80,36 +78,36 @@
 .listItem {
   padding: 0.7rem;
   margin: 0.3rem;
-  background: #3747d6;
+  background: var(--text-night-mode);
   border-radius: 1rem;
   text-align: center;
-  color: var(--text-night-mode);
+  color: #3747d6;
   font-weight: 600;
   text-decoration: none;
   transition: transform 0.3s ease;
-  border-top: 3px solid var(--text-night-mode);
-  border-bottom: 3px solid var(--text-night-mode);
+  border-top: 3px solid #3747d6;
+  border-bottom: 3px solid #3747d6;
 }
 
 .listItem a,
 .listItem a:visited {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
 
 .listItem:hover {
-  background: var(--text-night-mode);
-  color: #3747d6;
+  background: #3747d6;
+  color: var(--text-night-mode);
   transform: scale(1.1);
-  border-top: 3px solid  #3747d6;
-  border-bottom: 3px solid  #3747d6;
+  border-top: 3px solid var(--text-night-mode);
+  border-bottom: 3px solid var(--text-night-mode);
 }
 
 .paragraf {
   font-size: 1.2rem;
 }
 
-hr{       
+hr {
   border-top: 2px solid #3747d6;
   width: 10rem;
 }
@@ -134,14 +132,17 @@ hr{
   }
 
   .mainContainer {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 0.5rem;
     padding: 1rem;
+    align-items: center;
   }
 
-  .certificationsContainer{
-    margin-top: 1rem;
+  .aside {
+    width: 50%;
+    margin-top: 3rem;
+  }
+  .certificationsContainer {
+    margin-top: 3rem;
   }
 }
-
-

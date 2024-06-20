@@ -16,6 +16,17 @@ const AboutPage = () => {
   const { t } = useTranslation();
 
   const skills = [
+    { name: t("aboutPage.skills.3.name"), url: "https://reactjs.org/" },
+    {
+      name: t("aboutPage.skills.2.name"),
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
+    {
+      name: t("aboutPage.skills.5.name"),
+      url: "https://www.typescriptlang.org/",
+    },
+    { name: t("aboutPage.skills.4.name"), url: "https://tailwindcss.com/" },
+    { name: t("aboutPage.skills.7.name"), url: "https://nextjs.org/" },
     {
       name: t("aboutPage.skills.0.name"),
       url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
@@ -24,18 +35,8 @@ const AboutPage = () => {
       name: t("aboutPage.skills.1.name"),
       url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     },
-    {
-      name: t("aboutPage.skills.2.name"),
-      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    },
-    { name: t("aboutPage.skills.3.name"), url: "https://reactjs.org/" },
-    { name: t("aboutPage.skills.4.name"), url: "https://tailwindcss.com/" },
-    {
-      name: t("aboutPage.skills.5.name"),
-      url: "https://www.typescriptlang.org/",
-    },
+
     { name: t("aboutPage.skills.6.name"), url: "https://github.com/" },
-    { name: t("aboutPage.skills.7.name"), url: "https://nextjs.org/" },
   ];
 
   const languages = [
@@ -61,36 +62,6 @@ const AboutPage = () => {
 
   return (
     <div className={css.mainContainer}>
-      <aside className={css.aside}>
-        <div>
-          <h2 className={css.skills}>{t("aboutPage.skillsHeader")}</h2>
-          <ul className={css.ulist}>
-            {skills.map((skill, index) => (
-              <li key={index} className={css.listItem}>
-                <Link to={skill.url} target="_blank" rel="noopener noreferrer">
-                  {skill.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          
-        </div>
-        <hr />
-        <div className={css.foreignList}>
-          <h2>{t("aboutPage.languagesHeader")}</h2>
-          <ul className={css.spokenLan}>
-            {languages.map((lang, index) => (
-              <li key={index}>
-                <span className={css.boldLang}>{lang.language}</span>
-                <br /> - {lang.level}
-                <br />
-                <br />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </aside>
-
       <main>
         <div className={css.aboutBackground}>
           <h2 className={css.hey}>{t("aboutPage.hello")}</h2>
@@ -111,6 +82,34 @@ const AboutPage = () => {
           </div>
         </div>
       </main>
+      <aside className={css.aside}>
+        <div>
+          <h2 className={css.skills}>{t("aboutPage.skillsHeader")}</h2>
+          <ul className={css.ulist}>
+            {skills.map((skill, index) => (
+              <li key={index} className={css.listItem}>
+                <Link to={skill.url} target="_blank" rel="noopener noreferrer">
+                  {skill.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <hr />
+        <div className={css.foreignList}>
+          <h2>{t("aboutPage.languagesHeader")}</h2>
+          <ul className={css.spokenLan}>
+            {languages.map((lang, index) => (
+              <li key={index}>
+                <span className={css.boldLang}>{lang.language}</span>
+                <br /> - {lang.level}
+                <br />
+                <br />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </aside>
     </div>
   );
 };

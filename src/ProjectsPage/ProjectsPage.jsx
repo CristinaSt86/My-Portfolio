@@ -3,7 +3,8 @@ import css from "./ProjectsPage.module.css";
 import { useNavigate } from "react-router-dom";
 import WeatherMini from "../components/WeatherMini/WeatherMini";
 import { useTranslation } from "react-i18next";
-import RobotApp from "../components/RobotApp/RobotApp";
+//import RobotApp from "../components/RobotApp/RobotApp";
+import TinyTips from "../components/TinyTips/TinyTips";
 
 const ProjectsPage = () => {
   const navigate = useNavigate();
@@ -26,6 +27,10 @@ const ProjectsPage = () => {
   return (
     <div className={css.mainContainer}>
       <div>
+        <WeatherMini />
+      </div>
+      <hr />
+      <div>
         <ul className={css.ulLinks}>
           {proiecte.map((project, index) => (
             <li key={index}>
@@ -39,10 +44,10 @@ const ProjectsPage = () => {
           ))}
         </ul>
       </div>
+      <hr />
       <div>
-        <RobotApp />
+        <TinyTips />
       </div>
-      <WeatherMini />
     </div>
   );
 };

@@ -16,20 +16,40 @@
   cursor: pointer;
   transition: transform 0.3s ease;
   display: flex;
-  justify-content: center; 
-  align-items: center;     
-  text-align: center; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .languageTogg:hover {
   transform: scale(1.2);
 }
 
-.langThemeContainer{
+.langThemeContainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.languageDropdown {
+  border: 0.5px solid #374957;
+  outline: none;
+  padding: 0.2rem;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  font-style: oblique;
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.logoCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media only screen and (max-width: 800px) {
- 
 }
