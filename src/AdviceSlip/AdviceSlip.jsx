@@ -6,27 +6,28 @@ import GoToGithub from "../components/GoToGithub/GoToGithub";
 import ParagraphNight from "../components/ParagraphNight/ParagraphNight";
 import { useTranslation } from "react-i18next";
 
-
-
 const AdviceSlip = () => {
   const { t } = useTranslation();
   return (
-    <div className={css.mainContainer}>
-      <section className={css.aboutApp}>
-        <h1>{t('advicePage.pageTitle')}</h1>
-        <ParagraphNight>
-          <p>{t('advicePage.adviceDescription')}</p>
-        </ParagraphNight>
-      </section>
-      <GoToGithub to={t('advicePage.githubLink')}  />
-      <section>
-        <Image
-          src={AdvicePic}
-          alt="Advice Slip Image"
-          className={css.imagine}
-        />
-      </section>
-    </div>
+    <>
+      <div className={css.placeholder}></div>
+      <div className={css.mainContainer}>
+        <section className={css.aboutApp}>
+          <h1>{t("advicePage.pageTitle")}</h1>
+          <ParagraphNight>
+            <p>{t("advicePage.adviceDescription")}</p>
+          </ParagraphNight>
+        </section>
+        <GoToGithub to={t("advicePage.githubLink")} />
+        <section>
+          <Image
+            src={AdvicePic}
+            alt="Advice Slip Image"
+            className={css.imagine}
+          />
+        </section>
+      </div>
+    </>
   );
 };
 

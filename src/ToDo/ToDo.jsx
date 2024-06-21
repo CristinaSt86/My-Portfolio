@@ -9,24 +9,26 @@ import Todo4 from "../images/Todo4.jpg";
 import ParagraphNight from "../components/ParagraphNight/ParagraphNight";
 import { useTranslation } from "react-i18next";
 
-
 const ToDo = () => {
   const images = [Todo1, Todo2, Todo3, Todo4];
   const { t } = useTranslation();
 
   return (
-    <div className={css.mainContainer}>
-      <section className={css.aboutApp}>
-        <h1>{t('todoPage.pageTitle')}</h1>
-        <ParagraphNight>
-          <p>{t('todoPage.todoDescription')}</p>
-        </ParagraphNight>
-      </section>
-      <GoToGithub to={t('todoPage.githubLink')} />
-      <section>
-        <LightboxGallery images={images} alt={t('toDoPage.imageAlt')}/>
-      </section>
-    </div>
+    <>
+      <div className={css.placeholder}></div>
+      <div className={css.mainContainer}>
+        <section className={css.aboutApp}>
+          <h1>{t("todoPage.pageTitle")}</h1>
+          <ParagraphNight>
+            <p>{t("todoPage.todoDescription")}</p>
+          </ParagraphNight>
+        </section>
+        <GoToGithub to={t("todoPage.githubLink")} />
+        <section>
+          <LightboxGallery images={images} alt={t("toDoPage.imageAlt")} />
+        </section>
+      </div>
+    </>
   );
 };
 

@@ -30,18 +30,21 @@ const FigoRest = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={css.mainContainer}>
-      <section className={css.aboutApp}>
-        <h1>{t("figoRestPage.pageTitle")}</h1>
-        <ParagraphNight>
-          <p>{t("figoRestPage.description")}</p>
-        </ParagraphNight>
-      </section>
-      <GoToGithub to={t("figoRestPage.githubLink")} />
-      <section style={{ width: "100%" }}>
-        <LightboxGallery images={images} alt={t("figoRestPage.imageAlt")} />
-      </section>
-    </div>
+    <>
+      <div className={css.placeholder}></div>
+      <div className={css.mainContainer}>
+        <section className={css.aboutApp}>
+          <h1>{t("figoRestPage.pageTitle")}</h1>
+          <ParagraphNight>
+            <p>{t("figoRestPage.description")}</p>
+          </ParagraphNight>
+        </section>
+        <GoToGithub to={t("figoRestPage.githubLink")} />
+        <section style={{ width: "100%" }}>
+          <LightboxGallery images={images} alt={t("figoRestPage.imageAlt")} />
+        </section>
+      </div>
+    </>
   );
 };
 

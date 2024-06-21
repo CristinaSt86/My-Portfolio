@@ -97,7 +97,11 @@ const TinyTips = () => {
       </h6>
       <p className={css.paragraph}>{`"${advice}"`}</p>
 
-      <img src={ellipse} alt={t("tinyTips.ellipseAlt")} className={css.cercVerde} />
+      <img
+        src={ellipse}
+        alt={t("tinyTips.ellipseAlt")}
+        className={css.cercVerde}
+      />
       <img
         src={divDesk}
         alt={t("tinyTips.divDeskAlt")}

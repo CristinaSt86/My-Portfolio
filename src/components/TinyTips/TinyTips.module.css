@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:#374957;
+  background-color: #374957;
   border-radius: 2rem;
   padding: 2rem;
   border-top: 4rem solid #3747d6;
@@ -13,6 +13,7 @@
   height: 13rem;
   /* box-shadow: 0 0 10px 5px #3747d6; */
 }
+
 .adviceNo {
   color: #53ffab;
   letter-spacing: 0.2rem;
@@ -64,11 +65,11 @@
     height: 10rem;
   }
 
-  .adviceNo{
+  .adviceNo {
     top: -1rem;
   }
 
-  .paragraph{
+  .paragraph {
     padding: 0px 1rem;
   }
   .design.desktop {

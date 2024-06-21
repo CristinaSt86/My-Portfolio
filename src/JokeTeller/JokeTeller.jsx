@@ -11,23 +11,26 @@ import RobotApp from "../components/RobotApp/RobotApp";
 const JokeTeller = () => {
   const { t } = useTranslation();
   return (
-    <div className={css.mainContainer}>
-      <section className={css.aboutApp}>
-        <h1>{t("jokeTellerPage.pageTitle")}</h1>
-        <ParagraphNight>
-          <p>{t("jokeTellerPage.jokeDescription")}</p>
-        </ParagraphNight>
-      </section>
-      <GoToGithub to={t("jokeTellerPage.githubLink")} />
-      <section>
-        <RobotApp />
-         {/* <Image
-          src={miniRobotPic}
-          alt={t("jokeTellerPage.imageAlt")}
-          className={css.imagine}
-        />  */}
-      </section>
-    </div>
+    <>
+      <div className={css.placeholder}></div>
+      <div className={css.mainContainer}>
+        <section className={css.aboutApp}>
+          <h1>{t("jokeTellerPage.pageTitle")}</h1>
+          <ParagraphNight>
+            <p>{t("jokeTellerPage.jokeDescription")}</p>
+          </ParagraphNight>
+        </section>
+        <GoToGithub to={t("jokeTellerPage.githubLink")} />
+        <section>
+          <RobotApp />
+          {/* <Image
+     src={miniRobotPic}
+     alt={t("jokeTellerPage.imageAlt")}
+     className={css.imagine}
+   />  */}
+        </section>
+      </div>
+    </>
   );
 };
 
