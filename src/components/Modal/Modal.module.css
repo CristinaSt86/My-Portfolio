@@ -23,8 +23,8 @@
     max-height: 80%;
     overflow: hidden;
     background: transparent;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 1.5rem;
+    border-radius: 1rem;
     position: relative;
   }
   

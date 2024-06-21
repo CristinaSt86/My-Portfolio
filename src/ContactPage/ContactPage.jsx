@@ -2,7 +2,7 @@ import React from "react";
 import Cris from "../images/Cris.png";
 import Linkedin from "../images/linkedin.png";
 import Github from "../images/github.png";
-import Instagram from "../images/instagram.png";
+// import Instagram from "../images/instagram.png";
 import css from "./ContactPage.module.css";
 import { Link } from "react-router-dom";
 import Image from "../components/Image/Image";

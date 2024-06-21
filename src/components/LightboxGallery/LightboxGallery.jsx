@@ -69,7 +69,7 @@ import React, { useState } from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import Image from "../Image/Image";
-import css from "../../FigoRest/FigoRest.module.css";
+import css from "./LightboxGallery.module.css"
 import Modal from "../Modal/Modal";
 // import x from "../../images/x.png";
 
@@ -107,7 +107,7 @@ export const LightboxGallery = ({ images }) => {
         <ImageGallery
           items={galleryImages}
           startIndex={photoIndex}
-          showThumbnails={true}
+          showThumbnails={false}
           onSlide={(currentIndex) => setPhotoIndex(currentIndex)}
           infinite={true}
           showPlayButton={false}

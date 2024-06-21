@@ -22,27 +22,27 @@
   max-width: 100%;
 }
 
-.galleryContainer {
+/* .galleryContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.6rem;
-}
+} */
 
-.imgFit {
+/* .imgFit {
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
-.imagine {
+} */
+/* .imagine {
   width: 6.25rem;
   height: 6.25rem;
   object-fit: cover;
   border-radius: 1rem;
   cursor: pointer;
-}
+} */
 
-.image-gallery-content .image-gallery-slide .image-gallery-image {
+/* .image-gallery-content .image-gallery-slide .image-gallery-image {
   border-radius: 1rem;
 }
 
@@ -58,7 +58,7 @@
 
 .image-gallery-index {
   display: none;
-}
+} */
 
 /* x {
   width: auto;
@@ -86,11 +86,18 @@
     margin: 2rem 2rem 2rem 0;
   }
 
+  /* .image-gallery-thumbnail .image-gallery-thumbnail-image {
+    vertical-align: middle;
+    width: 100%;
+    line-height: 0;
+    display: none !important;
+  } */
+
   .aboutApp {
     padding: 0;
   }
 
-  x {
+  /* x {
     transform: none;
-  }
+  } */
 }
