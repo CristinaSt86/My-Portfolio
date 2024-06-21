@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import css from "./FlippCard.module.css";
 import { useTranslation } from "react-i18next";
 
-const FlippCard = ({ title, description, icon }) => {
+const FlippCard = ({ title, description, icon, flipIcon }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const { t } = useTranslation();
 
@@ -16,7 +16,7 @@ const FlippCard = ({ title, description, icon }) => {
         <div className={css.front}>
           <img src={icon} alt="" className={css.icon} />
           {title}
-          {/* <div className={css.flipInstruction}>Click to flip</div> */}
+         <img src={flipIcon} alt="flip icon" className={css.flip} />
         </div>
 
         <div className={css.back}>{description}</div>

@@ -1,4 +1,3 @@
-
 .services {
   display: flex;
   flex-direction: column;
@@ -6,8 +5,14 @@
   align-items: center;
   margin: 3rem 0;
 }
+
+.placeholder {
+  height: 7rem;
+}
+
 .servicesTitle {
   align-items: center;
+  
 }
 .mainContainer {
   max-width: 1200px;
@@ -22,13 +27,13 @@
   margin: 0 3rem 3rem 3rem;
 }
 
-@media (max-width: 600px){
- .mainContainer{
-  flex-direction: column;
-  padding-bottom: 7rem;
-  margin-bottom: 3rem;
- }
-  .servicesTitle{
+@media (max-width: 600px) {
+  .mainContainer {
+    flex-direction: column;
+    padding-bottom: 7rem;
+    margin-bottom: 3rem;
+  }
+  .servicesTitle {
     text-align: center;
     margin: 1rem;
   }

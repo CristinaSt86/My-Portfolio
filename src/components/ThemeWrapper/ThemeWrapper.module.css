@@ -13,7 +13,7 @@ body {
 }
 
 .darkTheme {
-  background: url("../../images/night2.jpg");
+  background: url("../../images/bg1.jpg");
   color: var(--text-night-mode);
   background-size: cover;
   background-position: center;

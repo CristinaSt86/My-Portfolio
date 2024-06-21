@@ -25,30 +25,33 @@ const ProjectsPage = () => {
   ];
 
   return (
-    <div className={css.mainContainer}>
-      <div>
-        <WeatherMini />
+    <>
+      <div className={css.placeholder}></div>
+      <div className={css.mainContainer}>
+        <div>
+          <WeatherMini />
+        </div>
+        <hr />
+        <div>
+          <ul className={css.ulLinks}>
+            {proiecte.map((project, index) => (
+              <li key={index}>
+                <button
+                  className={css.links}
+                  onClick={() => handleProjectClick(project.path)}
+                >
+                  {project.name}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <hr />
+        <div>
+          <TinyTips />
+        </div>
       </div>
-      <hr />
-      <div>
-        <ul className={css.ulLinks}>
-          {proiecte.map((project, index) => (
-            <li key={index}>
-              <button
-                className={css.links}
-                onClick={() => handleProjectClick(project.path)}
-              >
-                {project.name}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <hr />
-      <div>
-        <TinyTips />
-      </div>
-    </div>
+    </>
   );
 };
 

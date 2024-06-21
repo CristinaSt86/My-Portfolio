@@ -21,56 +21,59 @@ const ContactPage = () => {
       : css.contactBackground;
 
   return (
-    <div className={css.display}>
-      <div className={contactBgDarkMode}>
-        <div className={css.imageContainer}>
-          <Image
-            src={Cris}
-            alt={t("contactPage.imageAlt")}
-            className={css.imagine}
-          />
-        </div>
-        <div className={css.contactContainer}>
-          <h1 className={css.contactMe}>{t("contactPage.contactMe")}</h1>
-          <h2 className={css.mobile}>{t("contactPage.mobile")}</h2>
-          <h2>
-            <div className={css.msgHireMe}>
-              <a href={`mailto:${emailAddress}`} className={css.mail}>
-                {t("contactPage.hireMe")}
-              </a>
-              <img src={msg} alt="email" />
+    <>
+      <div className={css.placeholder}></div>
+      <div className={css.display}>
+        <div className={contactBgDarkMode}>
+          <div className={css.imageContainer}>
+            <Image
+              src={Cris}
+              alt={t("contactPage.imageAlt")}
+              className={css.imagine}
+            />
+          </div>
+          <div className={css.contactContainer}>
+            <h1 className={css.contactMe}>{t("contactPage.contactMe")}</h1>
+            <h2 className={css.mobile}>{t("contactPage.mobile")}</h2>
+            <h2>
+              <div className={css.msgHireMe}>
+                <a href={`mailto:${emailAddress}`} className={css.mail}>
+                  {t("contactPage.hireMe")}
+                </a>
+                <img src={msg} alt="email" />
+              </div>
+            </h2>
+            <div className={css.contactLinks}>
+              <Link to="https://github.com/CristinaSt86" target="blank">
+                <Image
+                  src={Github}
+                  alt={t("contactPage.githubAlt")}
+                  className={css.socialMediaImg}
+                />
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/cristina-stoian-frontend-developer/"
+                target="blank"
+              >
+                <Image
+                  src={Linkedin}
+                  alt={t("contactPage.linkedInAlt")}
+                  className={css.socialMediaImg}
+                />
+              </Link>
+              {/* <Link to="https://www.instagram.com/crissalexx/" target="blank">
+      <Image
+        src={Instagram}
+        alt={t("contactPage.instagramAlt")}
+        className={css.socialMediaImg}
+      />
+    </Link> */}
             </div>
-          </h2>
-          <div className={css.contactLinks}>
-            <Link to="https://github.com/CristinaSt86" target="blank">
-              <Image
-                src={Github}
-                alt={t("contactPage.githubAlt")}
-                className={css.socialMediaImg}
-              />
-            </Link>
-            <Link
-              to="https://www.linkedin.com/in/cristina-stoian-frontend-developer/"
-              target="blank"
-            >
-              <Image
-                src={Linkedin}
-                alt={t("contactPage.linkedInAlt")}
-                className={css.socialMediaImg}
-              />
-            </Link>
-            {/* <Link to="https://www.instagram.com/crissalexx/" target="blank">
-              <Image
-                src={Instagram}
-                alt={t("contactPage.instagramAlt")}
-                className={css.socialMediaImg}
-              />
-            </Link> */}
           </div>
         </div>
+        <Form />
       </div>
-      <Form />
-    </div>
+    </>
   );
 };
 

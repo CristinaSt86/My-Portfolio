@@ -89,57 +89,69 @@ const AboutPage = () => {
   const certifications = [c11, c12, c13, c14, c15, c16, c17];
 
   return (
-    <div className={css.mainContainer}>
-      <aside className={css.aside}>
-        <div>
-          <h2 className={css.skills}>{t("aboutPage.skillsHeader")}</h2>
-          <ul className={css.ulist}>
-            {skills.map((skill, index) => (
-              <li key={index} className={css.listItem}>
-                <Link to={skill.url} target="_blank" rel="noopener noreferrer" className={css.nameIcon}>
-                  <img src={skill.icon} alt={skill.name} className={css.icon} />
-                  {skill.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <hr />
-        <div className={css.foreignList}>
-          <h2>{t("aboutPage.languagesHeader")}</h2>
-          <ul className={css.spokenLan}>
-            {languages.map((lang, index) => (
-              <li key={index}>
-                <span className={css.boldLang}>{lang.language}</span>
-                <br /> - {lang.level}
-                <br />
-                <br />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </aside>
-      <main className={css.main2}>
-        <div className={css.aboutBackground}>
-          <h2 className={css.hey}>{t("aboutPage.hello")}</h2>
-          <ParagraphNight>
-            {t("aboutPage.introText", { returnObjects: true }).map(
-              (text, index) => (
-                <p className={css.paragraph} key={index}>
-                  {text}
-                </p>
-              )
-            )}
-          </ParagraphNight>
-        </div>
-        <div className={css.certificationsContainer}>
-          <h2>{t("aboutPage.certificationsHeader")}</h2>
-          <section style={{ width: "100%" }}>
-            <LightboxGallery images={certifications} />
-          </section>
-        </div>
-      </main>
-    </div>
+    <>
+      <div className={css.placeholder}></div>
+      <div className={css.mainContainer}>
+        <aside className={css.aside}>
+          <div>
+            <h2 className={css.skills}>{t("aboutPage.skillsHeader")}</h2>
+            <ul className={css.ulist}>
+              {skills.map((skill, index) => (
+                <li key={index} className={css.listItem}>
+                  <Link
+                    to={skill.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={css.nameIcon}
+                  >
+                    <img
+                      src={skill.icon}
+                      alt={skill.name}
+                      className={css.icon}
+                    />
+                    {skill.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <hr />
+          <div className={css.foreignList}>
+            <h2>{t("aboutPage.languagesHeader")}</h2>
+            <ul className={css.spokenLan}>
+              {languages.map((lang, index) => (
+                <li key={index}>
+                  <span className={css.boldLang}>{lang.language}</span>
+                  <br /> - {lang.level}
+                  <br />
+                  <br />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </aside>
+        <main className={css.main2}>
+          <div className={css.aboutBackground}>
+            <h2 className={css.hey}>{t("aboutPage.hello")}</h2>
+            <ParagraphNight>
+              {t("aboutPage.introText", { returnObjects: true }).map(
+                (text, index) => (
+                  <p className={css.paragraph} key={index}>
+                    {text}
+                  </p>
+                )
+              )}
+            </ParagraphNight>
+          </div>
+          <div className={css.certificationsContainer}>
+            <h2>{t("aboutPage.certificationsHeader")}</h2>
+            <section style={{ width: "100%" }}>
+              <LightboxGallery images={certifications} />
+            </section>
+          </div>
+        </main>
+      </div>
+    </>
   );
 };
 

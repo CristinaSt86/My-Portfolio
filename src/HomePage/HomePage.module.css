@@ -9,6 +9,11 @@
   gap: 2rem;
 }
 
+.placeholder{
+  height: 7rem;
+}
+
+
 .titlu {
   text-align: center;
   font-size: 2rem;

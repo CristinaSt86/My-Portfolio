@@ -6,6 +6,10 @@
   margin: 3rem 0;
 }
 
+.placeholder {
+  height: 7rem;
+}
+
 .contactBackground {
   border-radius: 1rem;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);

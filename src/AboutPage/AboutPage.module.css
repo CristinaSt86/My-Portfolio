@@ -13,6 +13,10 @@
   margin-top: 3rem;
 }
 
+.placeholder{
+  height: 7rem;
+}
+
 .aboutBackground {
   width: 100%;
   background: rgba(255, 255, 255, 0.2);
