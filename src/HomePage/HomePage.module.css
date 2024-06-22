@@ -36,10 +36,14 @@
   overflow: hidden;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 767px) {
   .mainContainer {
     flex-direction: column;
     margin: 0;
     padding: 1rem 1rem;
+  }
+
+  .placeholder {
+    height: 5rem;
   }
 }

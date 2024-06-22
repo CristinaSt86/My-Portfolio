@@ -34,6 +34,10 @@
     margin: 2rem 2rem 2rem 0;
   }
 
+  .placeholder {
+    height: 4rem;
+  }
+
   .aboutApp {
     padding: 0;
   }

@@ -21,17 +21,22 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 7rem;
   background: #ffffff33;
   border-radius: 1rem;
   margin: 0 3rem 3rem 3rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .mainContainer {
     flex-direction: column;
-    padding-bottom: 7rem;
+    /* padding-bottom: 7rem; */
     margin-bottom: 3rem;
+    padding: 4rem 6rem 7rem 4rem;
+  }
+
+  .placeholder {
+    height: 4rem;
   }
   .servicesTitle {
     text-align: center;

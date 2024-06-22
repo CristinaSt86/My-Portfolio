@@ -134,6 +134,11 @@ hr {
     margin-top: 1rem;
   }
 
+  .placeholder{
+    height: 4rem;
+  }
+  
+
   .paragraf {
     width: 100%;
     text-align: justify;

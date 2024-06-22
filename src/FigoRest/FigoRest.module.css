@@ -86,6 +86,9 @@
     margin: 2rem 2rem 2rem 0;
   }
 
+  .placeholder {
+    height: 4rem;
+  }
   /* .image-gallery-thumbnail .image-gallery-thumbnail-image {
     vertical-align: middle;
     width: 100%;

@@ -8,7 +8,7 @@
 .links {
   text-decoration: none;
   display: flex;
-  padding: 0.7rem;
+  padding: 0.5rem;
   border-bottom: 3px solid #445561;
   border-radius: 1rem;
   color: var(--text-day-mode);
@@ -46,6 +46,11 @@
   .hamburger img {
     display: block;
     width: 2rem;
+    /* position: absolute;
+    top: 100%; 
+    left: 0; 
+    z-index: 10; 
+    display: block; */
   }
 
   .hamburger {

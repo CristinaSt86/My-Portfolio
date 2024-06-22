@@ -48,13 +48,17 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 767px) {
   .mainContainer {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     gap: 4rem;
     margin: 3rem 0;
+  }
+
+  .placeholder {
+    height: 4rem;
   }
 
   .ulLinks {

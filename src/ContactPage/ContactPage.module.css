@@ -23,17 +23,22 @@
   box-shadow: 0 0 10px 5px #fff;
 }
 
-.contactContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.imageContainer {
+  position: relative;
+  width: 100%; /* Ensure this container fits the parent width */
+}
+
+.contactContainer{
+  position: absolute;
+  top: 18%;
+  left: 27%;
 }
 
 .imagine {
   width: 100%;
   height: 45vh;
-  object-fit: cover;
+  object-fit: contain;
+  border-radius: 1rem;
 }
 
 .socialMediaImg {
@@ -66,12 +71,12 @@
 }
 
 .contactLinks {
-  background-color: rgba(255, 255, 255, 0.4);
   display: flex;
   gap: 2rem;
   align-items: center;
-  margin: 1rem;
-  padding: 0.5rem;
+  justify-content: center;
+  margin: 0.3rem;
+  padding: 0.3rem;
   border-radius: 1rem;
 }
 
@@ -89,6 +94,25 @@
 
 .msgHireMe:hover {
   transform: scale(1.1);
+}
+
+@media(max-width: 960px){
+  .contactContainer{
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .contactLinks{
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .imagine{
+    height: auto;
+  }
 }
 
 @media (min-width: 700px) and (max-width: 1044px) {
