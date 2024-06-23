@@ -115,20 +115,8 @@ const AboutPage = () => {
               ))}
             </ul>
           </div>
-          <hr />
-          <div className={css.foreignList}>
-            <h2>{t("aboutPage.languagesHeader")}</h2>
-            <ul className={css.spokenLan}>
-              {languages.map((lang, index) => (
-                <li key={index}>
-                  <span className={css.boldLang}>{lang.language}</span>
-                  <br /> - {lang.level}
-                  <br />
-                  <br />
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* <hr /> */}
+          
         </aside>
         <main className={css.main2}>
           <div className={css.aboutBackground}>
@@ -148,6 +136,19 @@ const AboutPage = () => {
             <section style={{ width: "100%" }}>
               <LightboxGallery images={certifications} />
             </section>
+          </div>
+          <div className={css.foreignList}>
+            <h2 className={css.lanTitle}>{t("aboutPage.languagesHeader")} </h2>
+            <ul className={css.spokenLan}>
+              {languages.map((lang, index) => (
+                <li key={index}>
+                  <span className={css.boldLang}>{lang.language}</span>
+                  <br /> - {lang.level} 
+                  <br />
+                  <br />
+                </li>
+              ))}
+            </ul>
           </div>
         </main>
       </div>

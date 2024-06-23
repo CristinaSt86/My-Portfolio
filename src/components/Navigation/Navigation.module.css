@@ -2,37 +2,29 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
-  color: #374957;
+  gap: 1rem;
 }
 
 .links {
   text-decoration: none;
   display: flex;
   padding: 0.5rem;
-  border-bottom: 3px solid #445561;
-  border-radius: 1rem;
-  color: var(--text-day-mode);
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
   transition: transform 0.3s ease;
+  color:#374957 ;
 }
 
 .links:hover {
+  text-decoration: underline;
   transform: scale(1.1);
-  background: var(--text-night-mode);
 }
 
-.linksNight {
-  color: var(--text-night-mode);
-  border-bottom: 3px solid white;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 1rem;
-}
 
 .linksNight:hover {
-  color: var(--text-day-mode);
-  border-bottom: 3px solid #445561;
+  
+  text-decoration: underline;
 }
 
 .hamburger img {
@@ -42,7 +34,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   .hamburger img {
     display: block;
     width: 2rem;
@@ -63,14 +55,15 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: -2rem;
+    top: 2.7rem;
     left: 0;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 0 1rem 1rem 0;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0 0 1rem 0;
     transform: translateX(-100%);
     transition: transform 0.7s ease, opacity 0.7s ease;
     opacity: 0;
     pointer-events: none;
+    gap: 0;
   }
 
   .show {
@@ -82,9 +75,12 @@
   .links {
     padding: 1rem;
     font-size: 1.5rem;
-    color: var(--text-day-mode);
-    border-bottom: 2px solid #445561;
     display: inline;
+  }
+
+  
+  .links:hover{
+text-decoration: underline;
   }
 
   @keyframes fadeIn {
@@ -102,5 +98,4 @@
     animation: fadeIn 0.5s ease forwards;
     opacity: 0;
   }
-} 
-
+}

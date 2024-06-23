@@ -68,6 +68,8 @@
 
 .mobile {
   font-size: 1.3rem;
+  box-shadow: 0px 0px 10px #fff;
+  color:#374957;
 }
 
 .contactLinks {
@@ -106,6 +108,10 @@
     gap: 1rem;
   }
 
+  .mobile{
+    color:#3747d6;
+  }
+
   .contactLinks{
     background-color: rgba(255, 255, 255, 0.4);
   }
@@ -115,7 +121,7 @@
   }
 }
 
-@media (min-width: 700px) and (max-width: 1044px) {
+ @media (min-width: 700px) and (max-width: 1044px) {
   .contactBackground {
     width: 50%;
   }

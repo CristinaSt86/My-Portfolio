@@ -8,7 +8,8 @@
   },
   "homePage": {
     "greeting": "Salut! Sunt Cristina,",
-    "introduction": "dezvoltatoare frontend dedicată, localizată în Germania, concentrată pe crearea de soluții web elegante și ușor de utilizat."
+    "introduction": "dezvoltatoare frontend dedicată, localizată în Germania, concentrată pe crearea de soluții web elegante și ușor de utilizat.",
+     "readMore" : "Citește mai mult..."
   },
   "aboutPage": {
     "skillsHeader": "Limbaje de programare:",
@@ -39,7 +40,7 @@
       { "language": "Germană", "level": "B1" }
     ],
     "certificationsHeader": "Certificările Mele",
-    "hello": "Salut!",
+    "hello": "Cine este Cristina?",
     "introText": [
       "Sunt Cristina Stoian, dezvoltatoare frontend pasionată și motivată, cu un entuziasm puternic pentru crearea de experiențe web atractive și ușor de utilizat. Având o bază în multiple programe de formare acreditate, cursuri online și studiu intensiv individual, sunt dornică să contribui la proiecte inovative și să colaborez cu profesioniști cu gândire similară.",
       "Am avut ocazia să lucrez la o varietate de proiecte, incluzând crearea de site-uri web responsive, dezvoltarea de interfețe utilizator și implementarea de caracteristici interactive.",

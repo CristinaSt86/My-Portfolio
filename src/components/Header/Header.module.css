@@ -9,11 +9,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
   position: fixed;
   top: 0;
   width: 100%;
-  height: 15%;
+  height: 4rem;
   z-index: 1000;
   margin-bottom: 0.5rem;
   /* padding: 0.5rem; */
@@ -40,6 +40,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .languageDropdown {
@@ -49,6 +50,7 @@
   border-radius: 50%;
   aspect-ratio: 1 / 1;
   font-style: oblique;
+  color: #374957;
 }
 
 .logo {

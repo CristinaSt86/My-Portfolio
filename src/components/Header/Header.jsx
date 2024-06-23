@@ -29,15 +29,26 @@ const Header = () => {
           <img src={logo} alt="logo" className={css.logo} />
         </Link>
       </div>
-      <Navigation />
+
       <div className={css.langThemeContainer}>
+        <Navigation />
         {/* <button onClick={handleLanguageToggle} className={css.languageTogg}>
           {i18n.language === "en" ? "DE" : "EN"}
         </button> */}
-         <select onChange={handleLanguageChange} value={i18n.language} className={css.languageDropdown}>
-          <option value="en" className={css.option}>En</option>
-          <option value="de" className={css.option}>De</option>
-          <option value="ro" className={css.option}>Ro</option>
+        <select
+          onChange={handleLanguageChange}
+          value={i18n.language}
+          className={css.languageDropdown}
+        >
+          <option value="en" className={css.option}>
+            En
+          </option>
+          <option value="de" className={css.option}>
+            De
+          </option>
+          <option value="ro" className={css.option}>
+            Ro
+          </option>
         </select>
         <ThemeToggler />
       </div>

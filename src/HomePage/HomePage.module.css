@@ -9,10 +9,9 @@
   gap: 2rem;
 }
 
-.placeholder{
-  height: 7rem;
+.placeholder {
+  height: 9rem;
 }
-
 
 .titlu {
   text-align: center;
@@ -36,6 +35,28 @@
   overflow: hidden;
 }
 
+.introMore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.readMoreLink {
+  text-decoration: none;
+  padding: 1rem;
+  background-color: #3747d6;
+  color: var(--text-night-mode);
+  border-radius: 1rem;
+  transition: transform 0.3s;
+  
+}
+
+.readMoreLink:hover {
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 767px) {
   .mainContainer {
     flex-direction: column;
@@ -43,7 +64,7 @@
     padding: 1rem 1rem;
   }
 
-  .placeholder {
-    height: 5rem;
+  .readMoreLink {
+    margin-bottom: 3rem;
   }
 }

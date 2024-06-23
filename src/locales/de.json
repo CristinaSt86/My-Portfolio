@@ -8,7 +8,8 @@
   },
   "homePage": {
     "greeting": "Hallo! Ich bin Cristina,",
-    "introduction": "engagierte Frontend-Entwicklerin in Deutschland, spezialisiert auf die Erstellung eleganter und benutzerfreundlicher Web-Lösungen."
+    "introduction": "engagierte Frontend-Entwicklerin in Deutschland, spezialisiert auf die Erstellung eleganter und benutzerfreundlicher Web-Lösungen.",
+    "readMore" : "Lesen Sie mehr..."
   },
   "aboutPage": {
     "skillsHeader": "Fähigkeiten:",
@@ -39,7 +40,7 @@
       { "language": "Deutsch", "level": "B1" }
     ],
     "certificationsHeader": "Meine Zertifikate",
-    "hello": "Hallo,",
+    "hello": "Wer ist Cristina?",
     "introText": [
       "Ich bin Cristina Stoian, eine engagierte Frontend-Entwicklerin mit einer großen Leidenschaft für die Gestaltung ansprechender und benutzerfreundlicher Web-Erlebnisse. Dank meines Fernstudiums, intensiver Schulungen und umfassenden Selbststudiums habe ich fundierte Kenntnisse erworben. Nun freue ich mich darauf, an innovativen Projekten mitzuwirken und mit gleichgesinnten Fachleuten zusammenzuarbeiten.",
       "Ich hatte die Gelegenheit, an einer Vielzahl von Projekten zu arbeiten, darunter das Erstellen responsiver Websites, Entwicklung von Benutzeroberflächen und die Implementierung interaktiver Funktionen.",
