@@ -1,8 +1,8 @@
 .transitionContainer {
-  transition: opacity 500ms ease-in-out; /* Default duration */
-  opacity: 0; /* Start with hidden */
+  transition: opacity 500ms ease-in-out; 
+  opacity: 0;
 }
 
 .visible {
-  opacity: 1; /* Fully visible when active */
+  opacity: 1; 
 }
