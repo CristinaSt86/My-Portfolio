@@ -4,7 +4,6 @@ import BackButton from "../BackButton/BackButton";
 import Navigation from "../Navigation/Navigation";
 import { Link } from "react-router-dom";
 import ThemeToggler from "../ThemeToggler/ThemeToggler";
-import { useLanguage } from "../../LanguageContext";
 import { useTranslation } from "react-i18next";
 import logo from "../../images/l3.svg";
 
