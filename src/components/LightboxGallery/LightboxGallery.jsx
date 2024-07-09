@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import Image from "../Image/Image";
 import css from "./LightboxGallery.module.css";
 import Modal from "../Modal/Modal";
 
@@ -25,11 +24,11 @@ export const LightboxGallery = ({ images }) => {
     <div>
       <div className={css.galleryContainer}>
         {images.map((image, index) => (
-          <Image
+          <img
             key={index}
             src={image}
             alt={`Gallery Image ${index + 1}`}
-            className="cursor-pointer hover:opacity-75 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105"
+            className={`${css.thumbnail} cursor-pointer hover:opacity-75 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105`}
             onClick={() => handleImageClick(index)}
           />
         ))}

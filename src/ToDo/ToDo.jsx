@@ -24,7 +24,7 @@ const ToDo = () => {
           </ParagraphNight>
         </section>
         <GoToGithub to={t("todoPage.githubLink")} />
-        <section>
+        <section  style={{ width: '100%' }}>
           <LightboxGallery images={images} alt={t("toDoPage.imageAlt")} />
         </section>
       </div>
