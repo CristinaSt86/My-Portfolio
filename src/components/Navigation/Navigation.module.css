@@ -2,6 +2,7 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -13,7 +14,7 @@
   font-weight: 600;
   text-align: center;
   transition: transform 0.3s ease;
-  color:#374957 ;
+  color: #374957;
 }
 
 .links:hover {
@@ -21,10 +22,18 @@
   transform: scale(1.1);
 }
 
-
 .linksNight:hover {
-  
   text-decoration: underline;
+}
+
+.languageDropdown {
+  border: 0.5px solid #374957;
+  outline: none;
+  padding: 0.2rem;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  font-style: oblique;
+  color: #374957;
 }
 
 .hamburger img {
@@ -50,24 +59,23 @@
   }
 
   .list {
-    padding: 0.1rem;
-    list-style-type: none;
-    display: flex;
     flex-direction: column;
     position: fixed;
-    top: 2.7rem;
+    top: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 0 0 1rem 0;
-    transform: translateX(-100%);
-    transition: transform 0.7s ease, opacity 0.7s ease;
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(-100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
     opacity: 0;
     pointer-events: none;
-    gap: 0;
+    z-index: 1000;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .show {
-    transform: translateX(0%);
+    transform: translateY(0%);
     opacity: 1;
     pointer-events: auto;
   }
@@ -78,9 +86,8 @@
     display: inline;
   }
 
-  
-  .links:hover{
-text-decoration: underline;
+  .links:hover {
+    text-decoration: underline;
   }
 
   @keyframes fadeIn {

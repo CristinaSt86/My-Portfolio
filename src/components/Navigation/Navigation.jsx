@@ -4,6 +4,7 @@ import css from "./Navigation.module.css";
 import hamburgerMenu from "../../images/meniuHam.png";
 import { useTheme } from "../../ThemeContext";
 import { useTranslation } from "react-i18next";
+import ThemeToggler from "../ThemeToggler/ThemeToggler";
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,9 +36,14 @@ const Navigation = () => {
   ];
 
   const { theme } = useTheme();
+  const { i18n } = useTranslation();
 
   const linksDarkMode =
     theme === "dark" ? `${css.links}  ${css.linksNight}` : css.links;
+
+  const handleLanguageChange = (event) => {
+    i18n.changeLanguage(event.target.value);
+  };
 
   return (
     <nav ref={navRef}>
@@ -50,12 +56,32 @@ const Navigation = () => {
             key={index}
             to={link.path}
             className={linksDarkMode}
-            style={{ animationDelay: `${index * 0.1}s` }} 
+            style={{ animationDelay: `${index * 0.1}s` }}
             onClick={toggleMenu}
           >
             {link.name}
           </Link>
         ))}
+        <li className={css.navItem}>
+          <select
+            onChange={handleLanguageChange}
+            value={i18n.language}
+            className={css.languageDropdown}
+          >
+            <option value="en" className={css.option}>
+              En
+            </option>
+            <option value="de" className={css.option}>
+              De
+            </option>
+            <option value="ro" className={css.option}>
+              Ro
+            </option>
+          </select>
+        </li>
+        <li className={css.navItem}>
+          <ThemeToggler />
+        </li>
       </ul>
     </nav>
   );
