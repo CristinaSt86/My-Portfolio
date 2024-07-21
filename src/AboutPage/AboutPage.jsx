@@ -10,6 +10,7 @@ import c14 from "../images/c14.jpg";
 import c15 from "../images/c15.png";
 import c16 from "../images/c16.png";
 import c17 from "../images/c17.png";
+import c18 from "../images/c18.webp";
 import { useTranslation } from "react-i18next";
 import H from "../images/H.svg";
 import cs3 from "../images/cs3.svg";
@@ -86,7 +87,7 @@ const AboutPage = () => {
     },
   ];
 
-  const certifications = [c11, c12, c13, c14, c15, c16, c17];
+  const certifications = [c11, c12, c13, c14, c15, c16, c17,c18];
 
   return (
     <>
@@ -116,7 +117,6 @@ const AboutPage = () => {
             </ul>
           </div>
           {/* <hr /> */}
-          
         </aside>
         <main className={css.main2}>
           <div className={css.aboutBackground}>
@@ -143,7 +143,7 @@ const AboutPage = () => {
               {languages.map((lang, index) => (
                 <li key={index}>
                   <span className={css.boldLang}>{lang.language}</span>
-                  <br /> - {lang.level} 
+                  <br /> - {lang.level}
                   <br />
                   <br />
                 </li>
